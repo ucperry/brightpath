@@ -1,34 +1,29 @@
 // ========================================
-// BRIGHTPATH DEV - HUMAN-AI METHODOLOGY
+// BRIGHTPATH DEV - HAILE METHODOLOGY
 // Interactive Website JavaScript
 // ========================================
 
-// Demo Steps Data
+// HAILE Demo Steps Data - Updated for 4-Phase Process
 const demoSteps = {
     1: {
-        title: "Human Problem Definition",
-        description: "Expert analysts identify core business challenges, define success metrics, and establish project scope boundaries using proven Agile practices.",
-        code: "analyze_business_problem(requirements, constraints, success_criteria)"
+        title: "Phase 1: Rapid MVP Creation",
+        description: "Build core workflow in 1-2 weeks. Focus on main business process. Make it production-ready and demonstrable. Cost: $2,500-5,000 range.",
+        code: "rapid_mvp_creation(core_workflow, 1-2_weeks, $2500_range)"
     },
     2: {
-        title: "Strategic Planning",
-        description: "Human experts create development roadmaps, select optimal technology stacks, and design system architectures that solve specific problems.",
-        code: "design_architecture(business_requirements, technical_constraints, scalability_needs)"
+        title: "Phase 2: Live Usage & Customer Discovery", 
+        description: "Customer uses actual working system in real business operations for 1-2 weeks. Real business scenarios tested. Enhancement opportunities emerge naturally.",
+        code: "customer_discovery(working_system, real_usage, organic_requirements)"
     },
     3: {
-        title: "AI-Driven Implementation",
-        description: "Advanced AI systems execute development tasks with precision, speed, and consistency while adhering to human-defined requirements.",
-        code: "ai_development.implement(architecture, requirements, quality_standards)"
+        title: "Phase 3: Post-MVP Charter Development",
+        description: "Create specific enhancement roadmap based on actual usage. Customer requests based on real business value. Clear timeline and cost projections.",
+        code: "post_mvp_charter(evidence_based_planning, customer_requests, realistic_projections)"
     },
     4: {
-        title: "Continuous Validation",
-        description: "Human oversight ensures each feature delivers measurable value, maintains scope control, and aligns with original business objectives.",
-        code: "validate_features(business_value, scope_alignment, quality_metrics)"
-    },
-    5: {
-        title: "Streamlined Delivery",
-        description: "Efficient deployment processes and comprehensive documentation ensure smooth handoffs and long-term maintainability.",
-        code: "deploy_solution(optimized_code, documentation, support_materials)"
+        title: "Phase 4: Customer-Driven Enhancement", 
+        description: "Implement customer-requested enhancements based on demonstrated value. Timeline: 2-4 weeks per phase. Investment: $3,000-8,000 per phase typically.",
+        code: "customer_driven_enhancement(proven_roi, organic_evolution, measured_value)"
     }
 };
 
@@ -81,10 +76,10 @@ window.addEventListener('scroll', function() {
 });
 
 // ========================================
-// INTERACTIVE DEMO FUNCTIONS
+// HAILE INTERACTIVE DEMO FUNCTIONS
 // ========================================
 
-// Show demo step
+// Show HAILE demo step
 function showDemoStep(stepNumber, buttonElement) {
     try {
         // Remove active class from all buttons
@@ -148,7 +143,7 @@ function highlightStep(stepElement) {
 }
 
 // ========================================
-// COMPARISON SECTION FUNCTIONS
+// CUSTOMER FIRST COMPARISON FUNCTIONS
 // ========================================
 
 // Animate comparison card
@@ -194,7 +189,7 @@ function setActiveAndUpdateOutcome(listItem, outcomeId, content) {
 // RESULTS SECTION FUNCTIONS
 // ========================================
 
-// Reveal metric with counting animation
+// Reveal HAILE metric with counting animation
 function revealMetric(cardElement, targetNumber, label, description) {
     try {
         // Prevent multiple clicks on same card
@@ -241,115 +236,6 @@ function revealMetric(cardElement, targetNumber, label, description) {
 
 // ========================================
 // CONTACT FUNCTIONS
-// ========================================
-
-// Show contact form (placeholder)
-function showContactForm() {
-    try {
-        alert('Contact form integration would be implemented here. For now, please reach out via email or LinkedIn!');
-    } catch (error) {
-        console.error('Error in showContactForm:', error);
-    }
-}
-
-// ========================================
-// SCROLL-TRIGGERED ANIMATIONS
-// ========================================
-
-// Check if element is in viewport
-function isElementInViewport(el) {
-    try {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    } catch (error) {
-        console.error('Error in isElementInViewport:', error);
-        return false;
-    }
-}
-
-// Animate elements on scroll
-function animateOnScroll() {
-    try {
-        const animatedElements = document.querySelectorAll('.flow-step, .comparison-card, .metric-card');
-        
-        animatedElements.forEach(element => {
-            if (isElementInViewport(element)) {
-                element.style.animation = 'fadeInUp 0.6s ease-out forwards';
-            }
-        });
-    } catch (error) {
-        console.error('Error in animateOnScroll:', error);
-    }
-}
-
-// ========================================
-// INITIALIZATION
-// ========================================
-
-// Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    try {
-        // Initialize demo with first step
-        const firstButton = document.querySelector('.demo-button');
-        if (firstButton) {
-            showDemoStep(1, firstButton);
-        }
-        
-        // Trigger initial animation check
-        animateOnScroll();
-        
-        console.log('BrightPath Human-AI Methodology site initialized successfully');
-    } catch (error) {
-        console.error('Error during initialization:', error);
-    }
-});
-
-// Add scroll listener for animations
-window.addEventListener('scroll', animateOnScroll);
-
-// ========================================
-// UTILITY FUNCTIONS
-// ========================================
-
-// Debounce function for performance
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
-
-// Add debounced scroll listener
-window.addEventListener('scroll', debounce(animateOnScroll, 100));
-
-// ========================================
-// ERROR HANDLING
-// ========================================
-
-// Global error handler
-window.addEventListener('error', function(e) {
-    console.error('Global error caught:', e.error);
-});
-
-// Unhandled promise rejection handler
-window.addEventListener('unhandledrejection', function(e) {
-    console.error('Unhandled promise rejection:', e.reason);
-});
-
-// Add this to your script.js file
-
-// ========================================
-// CONTACT FORM FUNCTIONS
 // ========================================
 
 // Configuration - Replace with your Google Apps Script Web App URL
@@ -410,7 +296,7 @@ async function handleContactFormSubmit(event) {
         
         // Since we're using no-cors, we can't read the response
         // So we'll assume success if no error was thrown
-        showMessage('Thank you for your interest! We\'ll be in touch within 24 hours.', 'success');
+        showMessage('Thank you for choosing HAILE! We\'ll be in touch within 24 hours to discuss your MVP discovery consultation.', 'success');
         form.reset();
         
         // Track conversion (if you use analytics)
@@ -459,8 +345,8 @@ function trackContactFormSubmission(formData) {
     try {
         // Google Analytics 4 (if you have it)
         if (typeof gtag !== 'undefined') {
-            gtag('event', 'contact_form_submit', {
-                event_category: 'Contact',
+            gtag('event', 'haile_contact_form_submit', {
+                event_category: 'HAILE Contact',
                 event_label: formData.projectType || 'Unknown',
                 value: 1
             });
@@ -469,7 +355,7 @@ function trackContactFormSubmission(formData) {
         // Facebook Pixel (if you have it)
         if (typeof fbq !== 'undefined') {
             fbq('track', 'Contact', {
-                content_category: 'Human-AI Methodology'
+                content_category: 'HAILE Methodology'
             });
         }
         
@@ -479,7 +365,7 @@ function trackContactFormSubmission(formData) {
     }
 }
 
-// Update the showContactForm function to scroll to the form
+// Show contact form and scroll to it
 function showContactForm() {
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
@@ -496,19 +382,106 @@ function showContactForm() {
             }
         }, 1000);
     } else {
-        // Fallback message if form section doesn't exist
-        alert('Contact form is being set up. Please reach out via email for now!');
+        // Fallback - scroll to the section even if ID is different
+        scrollToSection('start-mvp');
     }
 }
 
 // ========================================
-// UPDATE INITIALIZATION
+// SCROLL-TRIGGERED ANIMATIONS
 // ========================================
 
-// Update the DOMContentLoaded event listener to include contact form initialization
+// Check if element is in viewport
+function isElementInViewport(el) {
+    try {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    } catch (error) {
+        console.error('Error in isElementInViewport:', error);
+        return false;
+    }
+}
+
+// Animate elements on scroll
+function animateOnScroll() {
+    try {
+        const animatedElements = document.querySelectorAll('.flow-step, .comparison-card, .metric-card, .architecture-card, .enabler-card, .charter-approach');
+        
+        animatedElements.forEach(element => {
+            if (isElementInViewport(element)) {
+                element.style.animation = 'fadeInUp 0.6s ease-out forwards';
+            }
+        });
+    } catch (error) {
+        console.error('Error in animateOnScroll:', error);
+    }
+}
+
+// ========================================
+// HAILE SPECIFIC INTERACTIONS
+// ========================================
+
+// Add special interaction for Economic Enabler cards
+function initializeEconomicEnablerInteractions() {
+    try {
+        const enablerCards = document.querySelectorAll('.enabler-card');
+        enablerCards.forEach(card => {
+            card.addEventListener('click', function() {
+                // Highlight the clicked card
+                enablerCards.forEach(c => c.style.transform = 'scale(1)');
+                this.style.transform = 'scale(1.05)';
+                
+                // Reset after animation
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 300);
+            });
+        });
+    } catch (error) {
+        console.error('Error initializing economic enabler interactions:', error);
+    }
+}
+
+// Add interaction for charter comparison
+function initializeCharterInteractions() {
+    try {
+        const charterApproaches = document.querySelectorAll('.charter-approach');
+        charterApproaches.forEach(approach => {
+            approach.addEventListener('click', function() {
+                // Highlight the approach
+                charterApproaches.forEach(a => {
+                    a.style.transform = 'scale(1)';
+                    a.style.borderWidth = '2px';
+                });
+                
+                this.style.transform = 'scale(1.02)';
+                this.style.borderWidth = '3px';
+                
+                // Reset after animation
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                    this.style.borderWidth = '2px';
+                }, 1000);
+            });
+        });
+    } catch (error) {
+        console.error('Error initializing charter interactions:', error);
+    }
+}
+
+// ========================================
+// INITIALIZATION
+// ========================================
+
+// Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     try {
-        // Initialize demo with first step
+        // Initialize HAILE demo with first phase
         const firstButton = document.querySelector('.demo-button');
         if (firstButton) {
             showDemoStep(1, firstButton);
@@ -517,11 +490,77 @@ document.addEventListener('DOMContentLoaded', function() {
         // Initialize contact form
         initializeContactForm();
         
+        // Initialize HAILE-specific interactions
+        initializeEconomicEnablerInteractions();
+        initializeCharterInteractions();
+        
         // Trigger initial animation check
         animateOnScroll();
         
-        console.log('BrightPath Human-AI Methodology site initialized successfully');
+        console.log('BrightPath HAILE Methodology site initialized successfully');
     } catch (error) {
         console.error('Error during initialization:', error);
     }
+});
+
+// Add scroll listener for animations
+window.addEventListener('scroll', animateOnScroll);
+
+// ========================================
+// UTILITY FUNCTIONS
+// ========================================
+
+// Debounce function for performance
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Add debounced scroll listener
+window.addEventListener('scroll', debounce(animateOnScroll, 100));
+
+// ========================================
+// ERROR HANDLING
+// ========================================
+
+// Global error handler
+window.addEventListener('error', function(e) {
+    console.error('Global error caught:', e.error);
+});
+
+// Unhandled promise rejection handler
+window.addEventListener('unhandledrejection', function(e) {
+    console.error('Unhandled promise rejection:', e.reason);
+});
+
+// ========================================
+// HAILE METHODOLOGY ENHANCEMENTS
+// ========================================
+
+// Add smooth transitions for all HAILE interactions
+function addHaileTransitions() {
+    try {
+        // Add transition classes to key elements
+        const transitionElements = document.querySelectorAll(
+            '.flow-step, .comparison-card, .metric-card, .enabler-card, .charter-approach, .architecture-card'
+        );
+        
+        transitionElements.forEach(element => {
+            element.style.transition = 'all 0.3s ease';
+        });
+    } catch (error) {
+        console.error('Error adding HAILE transitions:', error);
+    }
+}
+
+// Initialize HAILE enhancements after DOM load
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(addHaileTransitions, 500); // Slight delay to ensure all elements are loaded
 });
