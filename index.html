@@ -17,12 +17,20 @@
                 <span class="logo-text">BrightPath</span>
                 <span class="logo-chase">CH(Ai)SE</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#methodology" onclick="return scrollToSection('methodology');">The CH(Ai)SE Method</a></li>
-                <li><a href="#three-pillars" onclick="return scrollToSection('three-pillars');">Three Pillars</a></li>
-                <li><a href="#case-study" onclick="return scrollToSection('case-study');">Proven Results</a></li>
-                <li><a href="#framework" onclick="return scrollToSection('framework');">Framework Access</a></li>
-                <li><a href="#contact" onclick="return scrollToSection('contact');">Get Started</a></li>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#methodology" onclick="return scrollToSection('methodology'); closeMobileMenu();">The CH(Ai)SE Method</a></li>
+                <li><a href="#three-pillars" onclick="return scrollToSection('three-pillars'); closeMobileMenu();">Three Pillars</a></li>
+                <li><a href="#case-study" onclick="return scrollToSection('case-study'); closeMobileMenu();">Proven Results</a></li>
+                <li><a href="#framework" onclick="return scrollToSection('framework'); closeMobileMenu();">Framework Access</a></li>
+                <li><a href="#contact" onclick="return scrollToSection('contact'); closeMobileMenu();">Get Started</a></li>
             </ul>
         </div>
     </nav>

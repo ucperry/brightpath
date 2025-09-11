@@ -1064,10 +1064,13 @@ function announceToScreenReader(message) {
 // FINAL INITIALIZATION
 // ========================================
 
-// Enhanced initialization
+// Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     try {
-        // Core functionality
+        // Initialize mobile navigation
+        initializeMobileNavigation();
+        
+        // Initialize demo with first phase
         showDemo('mvp');
         
         // Enhanced features
@@ -1085,6 +1088,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Resize handler for responsive adjustments
         window.addEventListener('resize', debounce(() => {
+            // Close mobile menu on resize to desktop
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+            
             // Recalculate layouts if needed
             if (isMobileDevice()) {
                 document.body.classList.add('mobile-device');
