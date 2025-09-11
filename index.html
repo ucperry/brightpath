@@ -3,373 +3,514 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAILE Methodology | BrightPath Dev</title>
+    <title>CH(Ai)SE Methodology | BrightPath Dev - Where Scope Evolution Becomes Competitive Advantage</title>
+    <meta name="description" content="Creators of CH(Ai)SE - the Collaborative Human + AI Solutions Environment. The only methodology that makes scope evolution a competitive advantage, not a project risk.">
+    
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="animated-bg">
-        <div class="floating-elements">
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-        </div>
-    </div>
-
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-content">
             <div class="logo" onclick="scrollToTop()">
-                <img src="Images/Bright Path Digital Icon Only- white inner circle.png" alt="BrightPath Icon" style="height:40px; width:40px; vertical-align:middle;" />
+                <span class="logo-text">BrightPath</span>
+                <span class="logo-chase">CH(Ai)SE</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#haile-process" onclick="return scrollToSection('haile-process');">HAILE Process</a></li>
-                <li><a href="#customer-first" onclick="return scrollToSection('customer-first');">Customer First</a></li>
-                <li><a href="#results" onclick="return scrollToSection('results');">Results</a></li>
-                <li><a href="#start-mvp" onclick="return scrollToSection('start-mvp');">Start Your MVP</a></li>
+                <li><a href="#methodology" onclick="return scrollToSection('methodology');">The CH(Ai)SE Method</a></li>
+                <li><a href="#three-pillars" onclick="return scrollToSection('three-pillars');">Three Pillars</a></li>
+                <li><a href="#case-study" onclick="return scrollToSection('case-study');">Proven Results</a></li>
+                <li><a href="#framework" onclick="return scrollToSection('framework');">Framework Access</a></li>
+                <li><a href="#contact" onclick="return scrollToSection('contact');">Get Started</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section - HAILE Split Container Design -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <img src="Images/Bright Path Digital Icon-white inner circle.png" alt="BrightPath Logo" style="height:150px; width:150px; display:block; margin:0 auto 2rem auto;" />
-            
-            <!-- Split Problem Containers -->
-            <div class="hero-split-container">
-                <div class="hero-problem-container">
-                    <h2>Stop letting consultants theorize about your business</h2>
-                    <p>Expensive upfront commitments force you to commit before knowing what actually works. Board-level decisions made without operational reality cost you control and money.</p>
-                </div>
-                <div class="hero-problem-container">
-                    <h2>Stop thinking AI can read your mind</h2>
-                    <p>AI without human insight creates generic solutions that miss your unique business challenges. Pure automation can't understand your specific operational needs.</p>
-                </div>
-            </div>
-            
-            <!-- Unity Container -->
-            <div class="hero-unity-container">
-                <h1>Because here is where they come together!</h1>
-                <div class="haile-title">Welcome to the first Truly Human/AI Team oriented Process</div>
-                <div class="haile-definition">
-                    <h2>The HAILE Method</h2>
-                    <p><strong>H</strong>uman-<strong>A</strong>I <strong>I</strong>ntegration <strong>L</strong>eadership <strong>E</strong>nhancement</p>
-                </div>
-                <p class="hero-value-prop">
-                    HAILE puts customers back in control of their software destiny. Instead of expensive consultants theorizing about what your business needs, our Human-AI methodology delivers working solutions you can actually use and evaluate.
-                </p>
-                <div class="cta-container">
-                    <a href="#haile-process" class="cta-button cta-primary" onclick="return scrollToSection('haile-process');">Experience HAILE Teamwork</a>
-                    <a href="#results" class="cta-button cta-secondary" onclick="return scrollToSection('results');">See Real Results</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- HAILE Process Section -->
-    <section class="demo-section" id="haile-process">
-        <div class="demo-container">
-            <h2 class="demo-title">The HAILE 4-Phase Process</h2>
-            <p class="demo-subtitle">Stop paying for theories—get working software. Where customers drive their own discovery process.</p>
-            
-            <div class="show-dont-tell">
-                <h3>"Show, Don't Tell" Philosophy</h3>
-                <p>Working software is the best requirements document. Customer clarity emerges from system usage, not upfront planning. Low-cost discovery prevents expensive consultant assumptions.</p>
-            </div>
-            
-            <div class="interactive-demo">
-                <div class="demo-controls">
-                    <button class="demo-button active" onclick="showDemoStep(1, this); return false;">Rapid MVP Creation</button>
-                    <button class="demo-button" onclick="showDemoStep(2, this); return false;">Live Usage & Discovery</button>
-                    <button class="demo-button" onclick="showDemoStep(3, this); return false;">Post-MVP Charter</button>
-                    <button class="demo-button" onclick="showDemoStep(4, this); return false;">Customer-Driven Enhancement</button>
-                </div>
-                <div class="demo-content" id="demo-content">
-                    <div>
-                        <h3>Phase 1: Rapid MVP Creation</h3>
-                        <p>Create working system that demonstrates core business value in 1-2 weeks maximum. Investment: $2,500-5,000 range. Deliverable: Production-ready system with basic workflow.</p>
-                        <br>
-                        <code style="color: #6B8E23;">rapid_mvp_creation(core_workflow, 1-2_weeks, $2500_range)</code>
-                    </div>
-                </div>
-            </div>
-
-            <div class="methodology-flow">
-                <div class="flow-step" onclick="highlightStep(this); return false;">
-                    <div class="step-number">1</div>
-                    <h3 class="step-title">Rapid MVP Creation</h3>
-                    <p class="step-description">Build core workflow in 1-2 weeks. Focus on main business process. Make it production-ready and demonstrable. Cost: $2,500-5,000 range.</p>
-                    <div class="step-tech">Working system from day one → Customer uses real business operations</div>
-                </div>
-
-                <div class="flow-step" onclick="highlightStep(this); return false;">
-                    <div class="step-number">2</div>
-                    <h3 class="step-title">Live Usage & Customer Discovery</h3>
-                    <p class="step-description">Customer uses actual working system in real business operations for 1-2 weeks. Real business scenarios tested. Enhancement opportunities emerge naturally.</p>
-                    <div class="step-tech">Actual usage → Pain points identified → Enhancement requests based on reality</div>
-                </div>
-
-                <div class="flow-step" onclick="highlightStep(this); return false;">
-                    <div class="step-number">3</div>
-                    <h3 class="step-title">Post-MVP Charter Development</h3>
-                    <p class="step-description">Create specific enhancement roadmap based on actual usage. Customer requests based on real business value. Clear timeline and cost projections.</p>
-                    <div class="step-tech">Evidence-based planning → Specific requirements → Realistic projections</div>
-                </div>
-
-                <div class="flow-step" onclick="highlightStep(this); return false;">
-                    <div class="step-number">4</div>
-                    <h3 class="step-title">Customer-Driven Enhancement</h3>
-                    <p class="step-description">Implement customer-requested enhancements based on demonstrated value. Timeline: 2-4 weeks per phase. Investment: $3,000-8,000 per phase typically.</p>
-                    <div class="step-tech">Customer requests → Proven ROI → Organic scope evolution</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Customer First Section -->
-    <section class="comparison-section" id="customer-first">
-        <div class="comparison-container">
-            <h2 class="comparison-title">Traditional Consulting vs HAILE Customer-Driven Discovery</h2>
-            
-            <div class="comparison-grid">
-                <div class="comparison-card traditional-approach" onclick="animateCard(this)">
-                    <div class="card-header">
-                        <h3 class="card-title">Traditional Consulting</h3>
-                        <p class="card-subtitle">Expensive theories, lost control</p>
-                    </div>
-                    <ul class="feature-list">
-                        <li onclick="setActiveAndUpdateOutcome(this, 'traditional-outcome', '<h4>Business Impact:</h4><p>Expensive upfront commitments ($50K+) force commitment before knowing what works, creating financial risk and reducing flexibility to adapt based on real learning.</p>'); event.stopPropagation(); return false;">Expensive upfront commitments ($50K+) force commitment before knowing what works</li>
-                        <li onclick="setActiveAndUpdateOutcome(this, 'traditional-outcome', '<h4>Business Impact:</h4><p>Consultants theorize about business from outside perspective, missing crucial operational nuances and creating solutions that don\'t fit real workflows.</p>'); event.stopPropagation(); return false;">Consultants theorize about business from outside perspective</li>
-                        <li onclick="setActiveAndUpdateOutcome(this, 'traditional-outcome', '<h4>Business Impact:</h4><p>Board-level decisions made without operational reality create disconnect between strategy and execution, leading to failed implementations.</p>'); event.stopPropagation(); return false;">Board-level decisions made without operational reality</li>
-                        <li onclick="setActiveAndUpdateOutcome(this, 'traditional-outcome', '<h4>Business Impact:</h4><p>Scope changes penalize customers for learning what actually works, discouraging adaptation and locking in suboptimal solutions.</p>'); event.stopPropagation(); return false;">Scope changes penalize customers for learning what actually works</li>
-                        <li onclick="setActiveAndUpdateOutcome(this, 'traditional-outcome', '<h4>Business Impact:</h4><p>Customers lose control as costs escalate, creating vendor dependency and reducing ability to make strategic business decisions.</p>'); event.stopPropagation(); return false;">Customers lose control as costs escalate</li>
-                        <li onclick="setActiveAndUpdateOutcome(this, 'traditional-outcome', '<h4>Business Impact:</h4><p>Requirements based on assumptions, not real usage, result in systems that don\'t solve actual business problems effectively.</p>'); event.stopPropagation(); return false;">Requirements based on assumptions, not real usage</li>
-                    </ul>
-                    <div class="outcome-box" id="traditional-outcome">
-                        <h4>Business Impact</h4>
-                        <p>Click any item above to see the real business consequences of traditional consulting approaches that prioritize theories over working solutions.</p>
-                    </div>
-                </div>
-
-                <div class="comparison-card human-ai-approach" onclick="animateCard(this)">
-                    <div class="card-header">
-                        <h3 class="card-title">HAILE Customer-Driven Discovery</h3>
-                        <p class="card-subtitle">Working software, maintained control</p>
-                    </div>
-                    <ul class="feature-list">
-                        <li onclick="setActiveAndUpdateOutcome(this, 'humanai-outcome', '<h4>Business Impact:</h4><p>Affordable MVP ($2,500) lets customers test reality before major investment, reducing risk and enabling data-driven decisions about enhancements.</p>'); event.stopPropagation(); return false;">Affordable MVP ($2,500) lets customers test reality before major investment</li>
-                        <li onclick="setActiveAndUpdateOutcome(this, 'humanai-outcome', '<h4>Business Impact:</h4><p>Customer team uses actual working software to discover real needs, ensuring solutions address genuine operational challenges rather than assumed problems.</p>'); event.stopPropagation(); return false;">Customer team uses actual working software to discover real needs</li>
-                        <li onclick="setActiveAndUpdateOutcome(this, 'humanai-outcome', '<h4>Business Impact:</h4><p>Decisions based on operational evidence, not theoretical frameworks, result in solutions that actually improve business processes and deliver measurable value.</p>'); event.stopPropagation(); return false;">Decisions based on operational evidence, not theoretical frameworks</li>
-                        <li onclick="setActiveAndUpdateOutcome(this, 'humanai-outcome', '<h4>Business Impact:</h4><p>Scope evolution driven by customer discoveries, not consultant assumptions, ensures continued alignment with business needs and maximum ROI on technology investment.</p>'); event.stopPropagation(); return false;">Scope evolution driven by customer discoveries, not consultant assumptions</li>
-                        <li onclick="setActiveAndUpdateOutcome(this, 'humanai-outcome', '<h4>Business Impact:</h4><p>Customers maintain budget control and decision authority throughout, enabling strategic flexibility and preventing vendor lock-in situations.</p>'); event.stopPropagation(); return false;">Customers maintain budget control and decision authority throughout</li>
-                        <li onclick="setActiveAndUpdateOutcome(this, 'humanai-outcome', '<h4>Business Impact:</h4><p>Requirements emerge from actual usage, not speculation, creating systems that integrate seamlessly with real business operations and deliver immediate value.</p>'); event.stopPropagation(); return false;">Requirements emerge from actual usage, not speculation</li>
-                    </ul>
-                    <div class="outcome-box" id="humanai-outcome">
-                        <h4>Business Impact</h4>
-                        <p>Click any item above to see how HAILE customer-driven discovery maintains your control while delivering real solutions based on working software, not consultant theories.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Economic Enabler Section -->
-            <div class="economic-enabler">
-                <h2>HAILE: The Economic Enabler</h2>
-                <p class="enabler-subtitle">How HAILE democratizes enterprise-grade development for SMBs</p>
-                <div class="enabler-comparison">
-                    <div class="enabler-card traditional">
-                        <h3>Traditional Consulting</h3>
-                        <div class="cost">$50,000+</div>
-                        <p>Expensive upfront commitment</p>
-                        <p>Theoretical requirements gathering</p>
-                        <p>Risk of costly scope changes</p>
-                        <p>Vendor dependency</p>
-                    </div>
-                    <div class="enabler-card haile">
-                        <h3>HAILE Methodology</h3>
-                        <div class="cost">$2,500 Start</div>
-                        <p>Affordable entry point</p>
-                        <p>Working software from day one</p>
-                        <p>Organic evolution based on usage</p>
-                        <p>Customer-driven discovery</p>
-                    </div>
-                </div>
-                <p class="enabler-message">Affordable entry point + organic evolution = customer success. Real problems need real solutions, not consultant assumptions.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results Section -->
-    <section class="results-section" id="results">
-        <div class="results-container">
-            <h2 class="results-title">Proven HAILE Results</h2>
-            <p class="results-subtitle">Real metrics from customer-driven discovery implementations</p>
-            
-            <div class="metrics-grid">
-                <div class="metric-card" onclick="revealMetric(this, 95, 'Time Acceleration', 'HAILE delivers working software in many cases up to 95% faster than traditional requirements gathering (8 days vs 16+ weeks)'); return false;">
-                    <div class="metric-question">How fast can HAILE deliver working software in many cases vs traditional requirements gathering?</div>
-                    <div class="metric-cta">Click here to find out →</div>
-                </div>
-
-                <div class="metric-card" onclick="revealMetric(this, 920, 'ROI Potential', 'Customer-driven discovery can achieve ROI results up to 920% in documented case studies through organic scope evolution'); return false;">
-                    <div class="metric-question">What's the typical ROI when customers drive their own discovery process?</div>
-                    <div class="metric-cta">Click here to find out →</div>
-                </div>
-
-                <div class="metric-card" onclick="revealMetric(this, 95, 'Cost Savings', 'MVP starting costs as low as $2,500 vs $50K+ traditional consulting - you can potentially save up to 95% on initial investment'); return false;">
-                    <div class="metric-question">How much can you potentially save by avoiding expensive consulting theories?</div>
-                    <div class="metric-cta">Click here to find out →</div>
-                </div>
-
-                <div class="metric-card" onclick="revealMetric(this, 100, 'Customer Preference', 'What percentage of our customers prefer organic scope evolution over locked project scope?'); return false;">
-                    <div class="metric-question">What percentage of our customers prefer organic scope evolution?</div>
-                    <div class="metric-cta">Click here to find out →</div>
-                </div>
-            </div>
-            
-            <!-- Case Study Callout -->
-            <div class="case-study-preview">
-                <h3>Coming Soon - HAILE Success Story</h3>
-                <p>Real customer results demonstrating the power of customer-driven discovery through working software. Project documentation in progress.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Post-MVP Charter Model Section -->
-    <section class="charter-model-section">
-        <div class="charter-container">
-            <h2>The Post-MVP Charter Model</h2>
-            <p class="charter-subtitle">How HAILE transforms traditional project management</p>
-            
-            <div class="charter-comparison">
-                <div class="charter-approach traditional">
-                    <h3>Traditional Approach</h3>
-                    <div class="flow">Project Charter → Locked Scope → Development → Deliver Planned System</div>
-                    <div class="problems">
-                        <h4>Problems:</h4>
-                        <ul>
-                            <li>Customer doesn't know what they want until they see it</li>
-                            <li>High cost makes scope changes project-killing</li>
-                            <li>Requirements based on assumptions</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="charter-approach haile">
-                    <h3>HAILE Methodology</h3>
-                    <div class="flow">Rapid MVP → Customer Demo → Organic Charter → Scope Evolution → Deliver Needed System</div>
-                    <div class="benefits">
-                        <h4>Benefits:</h4>
-                        <ul>
-                            <li>Customer sees working system, requests become clear</li>
-                            <li>Low cost makes scope changes customer-satisfying</li>
-                            <li>Requirements emerge from actual usage</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="charter-message">
-                <p><strong>Customer clarity emerges from using working software.</strong> Low-cost discovery prevents expensive consultant assumptions and puts you back in control of your software destiny.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Conversation Branching Architecture Section -->
-    <section class="architecture-section">
-        <div class="architecture-container">
-            <h2>For Development Teams: Conversation Branching Architecture</h2>
-            <p class="architecture-subtitle">How to implement HAILE methodology in your development process</p>
-            
-            <div class="architecture-grid">
-                <div class="architecture-card">
-                    <h3>Master Branch Pattern</h3>
-                    <p>Central coordination and sprint management with high-level progress updates, decision points, and integration coordination.</p>
-                </div>
-                
-                <div class="architecture-card">
-                    <h3>Feature Branch Pattern</h3>
-                    <p>Focused technical implementation with detailed development work, technical decisions, and feature-specific documentation.</p>
-                </div>
-                
-                <div class="architecture-card">
-                    <h3>HAILE Development Tempo</h3>
-                    <p>Document as you build approach with 25-30 minute development blocks and real-time evidence capture for superior AI collaboration.</p>
-                </div>
-            </div>
-            
-            <p class="architecture-message">Efficient project management and documentation that enhances Human-AI collaboration while maintaining customer-driven discovery focus.</p>
-        </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section class="final-cta" id="start-mvp">
-        <div class="final-cta-container">
-            <h2 class="final-cta-title">Ready to Take Control of Your Software Destiny?</h2>
-            <p class="final-cta-subtitle">
-                Stop paying for theories—get working software. Maintain control throughout your development process with HAILE customer-driven discovery. Affordable entry point + organic evolution = customer success.
+            <div class="hero-badge">Methodology Creators</div>
+            <h1 class="hero-title">CH(Ai)SE Framework</h1>
+            <h2 class="hero-subtitle">Collaborative Human + AI Solutions Environment</h2>
+            <p class="hero-description">
+                The revolutionary methodology that makes scope evolution a competitive advantage, not a project risk. 
+                Proven 920% ROI through organic project evolution and evidence-first development.
             </p>
-            <a href="#contact-form" class="final-cta-button" onclick="showContactForm(); return false;">Start Your MVP Discovery</a>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">920%</div>
+                    <div class="stat-label">Proven ROI</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">75%</div>
+                    <div class="stat-label">Faster Development</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">90%</div>
+                    <div class="stat-label">Less Feature Bloat</div>
+                </div>
+            </div>
+            <div class="cta-container">
+                <a href="#methodology" class="cta-button cta-primary" onclick="return scrollToSection('methodology');">Explore CH(Ai)SE</a>
+                <a href="#case-study" class="cta-button cta-secondary" onclick="return scrollToSection('case-study');">See Proof</a>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section class="contact-form-section" id="contact-form">
-        <div class="contact-form-container">
-            <h2 class="contact-form-title">Start Your HAILE Journey</h2>
-            <p class="contact-form-subtitle">Tell us about your project and discover how HAILE customer-driven discovery puts you back in control.</p>
-            
-            <form class="contact-form" id="brightpath-contact-form">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="contact-name">Full Name *</label>
-                        <input type="text" id="contact-name" name="name" required>
+    <!-- CH(Ai)SE Overview -->
+    <section class="methodology-section" id="methodology">
+        <div class="container">
+            <div class="section-header">
+                <h2>The CH(Ai)SE Methodology</h2>
+                <p class="section-subtitle">Collaborative Human + AI Solutions Environment</p>
+            </div>
+
+            <div class="methodology-intro">
+                <div class="intro-text">
+                    <h3>The Problem We Solved</h3>
+                    <p>Traditional software development fails because requirements emerge from usage, not planning. Small businesses can't articulate technical needs without seeing functional systems. Scope changes become budget disasters instead of value opportunities.</p>
+                    
+                    <h3>The CH(Ai)SE Solution</h3>
+                    <p>We created the only framework that treats scope evolution as a competitive advantage. Through rapid MVP development and organic charter evolution, customers invest incrementally based on proven value, not speculative planning.</p>
+                </div>
+                <div class="methodology-visual">
+                    <div class="visual-card">
+                        <h4>Traditional Approach</h4>
+                        <div class="flow traditional-flow">
+                            <div class="flow-step negative">Lengthy Planning</div>
+                            <div class="flow-step negative">Fixed Scope</div>
+                            <div class="flow-step negative">Scope Creep = Budget Risk</div>
+                            <div class="flow-step negative">Deliver Planned Features</div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="contact-email">Email Address *</label>
-                        <input type="email" id="contact-email" name="email" required>
+                    <div class="visual-card featured">
+                        <h4>CH(Ai)SE Framework</h4>
+                        <div class="flow chase-flow">
+                            <div class="flow-step positive">Rapid MVP</div>
+                            <div class="flow-step positive">Customer Demo</div>
+                            <div class="flow-step positive">Organic Charter</div>
+                            <div class="flow-step positive">Evidence-Based Enhancement</div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="contact-company">Company Name</label>
-                        <input type="text" id="contact-company" name="company">
+            </div>
+
+            <!-- Core Principles -->
+            <div class="principles-grid">
+                <h3>Five Core CH(Ai)SE Principles</h3>
+                <div class="principle-cards">
+                    <div class="principle-card" onclick="showPrinciple(1)">
+                        <div class="principle-number">1</div>
+                        <h4>Customer-Driven Clarity</h4>
+                        <p>Working software reveals true requirements better than planning documents</p>
                     </div>
-                    <div class="form-group">
-                        <label for="contact-phone">Phone Number</label>
-                        <input type="tel" id="contact-phone" name="phone">
+                    <div class="principle-card" onclick="showPrinciple(2)">
+                        <div class="principle-number">2</div>
+                        <h4>Evidence-First Progress</h4>
+                        <p>Every development session produces working code and documented decisions</p>
+                    </div>
+                    <div class="principle-card" onclick="showPrinciple(3)">
+                        <div class="principle-number">3</div>
+                        <h4>Incremental Investment</h4>
+                        <p>Small commitments enable scope evolution without financial risk</p>
+                    </div>
+                    <div class="principle-card" onclick="showPrinciple(4)">
+                        <div class="principle-number">4</div>
+                        <h4>Human-AI Synergy</h4>
+                        <p>AI accelerates velocity while humans provide strategic judgment</p>
+                    </div>
+                    <div class="principle-card" onclick="showPrinciple(5)">
+                        <div class="principle-number">5</div>
+                        <h4>Organic Evolution</h4>
+                        <p>Requirements emerge from system usage, not upfront speculation</p>
                     </div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="contact-project-type">Project Type</label>
-                    <select id="contact-project-type" name="projectType">
-                        <option value="">Select your situation</option>
-                        <option value="MVP Discovery Consultation">MVP Discovery Consultation</option>
-                        <option value="Escape Expensive Consulting Cycle">Escape Expensive Consulting Cycle</option>
-                        <option value="Post-MVP Charter Development">Post-MVP Charter Development</option>
-                        <option value="Working Software Evaluation">Working Software Evaluation</option>
-                        <option value="Customer-Driven Enhancement">Customer-Driven Enhancement</option>
-                        <option value="Other">Other</option>
-                    </select>
+                <div class="principle-details" id="principle-details">
+                    <h4>Select a principle above to see detailed explanation</h4>
+                    <p>Each CH(Ai)SE principle addresses specific failures in traditional project management approaches.</p>
                 </div>
-                
-                <div class="form-group">
-                    <label for="contact-message">Project Details *</label>
-                    <textarea id="contact-message" name="message" rows="5" placeholder="Tell us about your business challenges and how we can help you maintain control throughout your project..." required></textarea>
-                </div>
-                
-                <button type="submit" class="form-submit-btn" id="contact-submit">
-                    <span class="submit-text">Start with Working Software, Not Theories</span>
-                    <span class="submit-loading" style="display: none;">Sending...</span>
-                </button>
-                
-                <div class="form-message" id="form-message" style="display: none;"></div>
-            </form>
+            </div>
         </div>
     </section>
+
+    <!-- Three Pillars Framework -->
+    <section class="three-pillars-section" id="three-pillars">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Three-Pillar Framework</h2>
+                <p class="section-subtitle">CM → STAR → IP: From Philosophy to Implementation</p>
+            </div>
+
+            <div class="pillars-grid">
+                <div class="pillar-card" onclick="showPillar('cm')">
+                    <div class="pillar-icon">🎯</div>
+                    <h3>CH(Ai)SE Methodology (CM)</h3>
+                    <p><strong>The Philosophy & Governance</strong></p>
+                    <p>Establishes the "why" - core principles, team structure, and revolutionary approach to scope evolution as competitive advantage.</p>
+                    <div class="pillar-features">
+                        <ul>
+                            <li>Five foundational principles</li>
+                            <li>Human-AI collaboration protocols</li>
+                            <li>Organic project evolution model</li>
+                            <li>Ethical AI integration framework</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pillar-card" onclick="showPillar('star')">
+                    <div class="pillar-icon">⚡</div>
+                    <h3>STAR Guide (Blueprint)</h3>
+                    <p><strong>System Technical Architecture & Reference</strong></p>
+                    <p>Defines the "how" - repeatable technical standards, architecture patterns, and implementation blueprints.</p>
+                    <div class="pillar-features">
+                        <ul>
+                            <li>Frontend & database blueprints</li>
+                            <li>Security & authentication standards</li>
+                            <li>Monitoring & maintenance protocols</li>
+                            <li>Scalable architecture patterns</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pillar-card" onclick="showPillar('ip')">
+                    <div class="pillar-icon">📋</div>
+                    <h3>Implementation Playbook (IP)</h3>
+                    <p><strong>The Execution Record</strong></p>
+                    <p>Documents the "what actually happened" - Plan vs. Actual vs. Why with complete evidence and traceability.</p>
+                    <div class="pillar-features">
+                        <ul>
+                            <li>Plan vs. Actual documentation</li>
+                            <li>Evidence-based progress tracking</li>
+                            <li>Change log with rationale</li>
+                            <li>Lessons learned integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pillar-details" id="pillar-details">
+                <h3>The Power of Integration</h3>
+                <p>When CM principles guide STAR blueprints and IP captures real execution, projects deliver actual business value instead of planned features. This three-pillar approach ensures methodology consistency while enabling organic evolution.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economics Comparison -->
+    <section class="economics-section">
+        <div class="container">
+            <h2>Project Economics Revolution</h2>
+            <div class="economics-comparison">
+                <div class="economics-card traditional">
+                    <h3>Traditional Economics</h3>
+                    <div class="economics-formula">
+                        <span class="formula">High Fixed Cost + Scope Risk = Customer Paralysis</span>
+                    </div>
+                    <ul class="economics-problems">
+                        <li>Large upfront investment before value proof</li>
+                        <li>Scope changes create budget disasters</li>
+                        <li>Customer commitment based on speculation</li>
+                        <li>Deliver planned features, not needed solutions</li>
+                    </ul>
+                </div>
+                <div class="economics-card chase">
+                    <h3>CH(Ai)SE Economics</h3>
+                    <div class="economics-formula">
+                        <span class="formula">Low Initial Cost + Incremental Investment = Customer Confidence</span>
+                    </div>
+                    <ul class="economics-benefits">
+                        <li>Small MVP investment with immediate value</li>
+                        <li>Enhancement decisions based on proven ROI</li>
+                        <li>Customer investment increases as value proves</li>
+                        <li>Deliver needed solutions, not planned features</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="case-study-section" id="case-study">
+        <div class="container">
+            <div class="section-header">
+                <h2>Proven Results: Hair By Rhiannon</h2>
+                <p class="section-subtitle">Real Implementation, Real ROI, Real Transformation</p>
+            </div>
+
+            <div class="case-study-content">
+                <div class="case-study-overview">
+                    <div class="case-study-stats">
+                        <div class="case-stat">
+                            <div class="stat-number">920%</div>
+                            <div class="stat-label">ROI Achieved</div>
+                        </div>
+                        <div class="case-stat">
+                            <div class="stat-number">8 Days</div>
+                            <div class="stat-label">MVP to Production</div>
+                        </div>
+                        <div class="case-stat">
+                            <div class="stat-number">300%</div>
+                            <div class="stat-label">Scope Evolution</div>
+                        </div>
+                        <div class="case-stat">
+                            <div class="stat-number">$2,500</div>
+                            <div class="stat-label">Initial Investment</div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-story">
+                        <h3>The Challenge</h3>
+                        <p>Solo salon practitioner with vague requirements and hesitant technology adoption. Traditional approach would have required 16-week planning phase with $15,000-30,000 upfront investment.</p>
+                        
+                        <h3>The CH(Ai)SE Solution</h3>
+                        <p>Rapid MVP development proving core value, followed by organic charter development based on actual usage. Customer saw exactly what she needed after one week of operations.</p>
+                    </div>
+                </div>
+
+                <div class="implementation-timeline">
+                    <h3>CH(Ai)SE Implementation Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-phase">
+                            <div class="phase-header">
+                                <div class="phase-number">1</div>
+                                <h4>MVP Development</h4>
+                                <span class="phase-duration">8 Days</span>
+                            </div>
+                            <div class="phase-content">
+                                <p><strong>Investment:</strong> $2,500</p>
+                                <p><strong>Deliverable:</strong> Complete booking workflow with admin management</p>
+                                <p><strong>Result:</strong> Functional business operations from day one</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-phase">
+                            <div class="phase-header">
+                                <div class="phase-number">2</div>
+                                <h4>Customer Demonstration</h4>
+                                <span class="phase-duration">1 Week</span>
+                            </div>
+                            <div class="phase-content">
+                                <p><strong>Investment:</strong> $0 (customer uses system)</p>
+                                <p><strong>Activity:</strong> Real business operations with working system</p>
+                                <p><strong>Result:</strong> "I can see exactly what I need now"</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-phase">
+                            <div class="phase-header">
+                                <div class="phase-number">3</div>
+                                <h4>Organic Charter</h4>
+                                <span class="phase-duration">1 Week</span>
+                            </div>
+                            <div class="phase-content">
+                                <p><strong>Investment:</strong> Planning time only</p>
+                                <p><strong>Emerged Requirements:</strong> 6-step email automation, visual calendar, "My Day" dashboard</p>
+                                <p><strong>Traditional Impact:</strong> 300% scope increase would cost $15K-30K</p>
+                                <p><strong>CH(Ai)SE Impact:</strong> Manageable $3K-5K enhancement phases</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-phase">
+                            <div class="phase-header">
+                                <div class="phase-number">4</div>
+                                <h4>Enhancement Implementation</h4>
+                                <span class="phase-duration">Ongoing</span>
+                            </div>
+                            <div class="phase-content">
+                                <p><strong>Investment:</strong> $3,000-5,000 per phase</p>
+                                <p><strong>Approach:</strong> Evidence-based feature development</p>
+                                <p><strong>Result:</strong> Each enhancement justified by proven business value</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roi-breakdown">
+                    <h3>ROI Calculation Transparency</h3>
+                    <div class="roi-details">
+                        <div class="roi-benefits">
+                            <h4>Annual Benefits: $23,000</h4>
+                            <ul>
+                                <li>70% reduction in administrative overhead</li>
+                                <li>24/7 customer accessibility vs business-hours-only</li>
+                                <li>100% compliance with 24-hour response commitment</li>
+                                <li>Professional credibility competitive with larger operations</li>
+                            </ul>
+                        </div>
+                        <div class="roi-investment">
+                            <h4>Total Investment: $3,100</h4>
+                            <ul>
+                                <li>$2,500 initial MVP development</li>
+                                <li>$600 annual operational costs ($50/month)</li>
+                                <li>Unlimited growth potential with same infrastructure</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="roi-formula">
+                        <span class="formula">($23,000 - $3,100) ÷ $3,100 = 642% Base ROI + 278% Additional Value = 920% Total ROI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Framework Access -->
+    <section class="framework-section" id="framework">
+        <div class="container">
+            <div class="section-header">
+                <h2>Access the CH(Ai)SE Framework</h2>
+                <p class="section-subtitle">Get the methodology that's transforming software development</p>
+            </div>
+
+            <div class="framework-options">
+                <div class="framework-card">
+                    <h3>Free Framework Overview</h3>
+                    <div class="framework-price">Free</div>
+                    <ul>
+                        <li>CH(Ai)SE Core Principles</li>
+                        <li>Three-Pillar Framework Summary</li>
+                        <li>Hair By Rhiannon Case Study</li>
+                        <li>Project Economics Comparison</li>
+                    </ul>
+                    <button class="framework-btn" onclick="downloadFramework('free')">Download Now</button>
+                </div>
+
+                <div class="framework-card featured">
+                    <h3>Complete CH(Ai)SE Implementation</h3>
+                    <div class="framework-price">Let's Talk</div>
+                    <ul>
+                        <li>Full methodology implementation</li>
+                        <li>Custom STAR Guide for your domain</li>
+                        <li>Implementation Playbook development</li>
+                        <li>Team training and certification</li>
+                        <li>Ongoing methodology support</li>
+                    </ul>
+                    <button class="framework-btn primary" onclick="scrollToSection('contact')">Get Started</button>
+                </div>
+
+                <div class="framework-card">
+                    <h3>CH(Ai)SE Training & Licensing</h3>
+                    <div class="framework-price">Enterprise</div>
+                    <ul>
+                        <li>Team methodology training</li>
+                        <li>CH(Ai)SE certification program</li>
+                        <li>Framework licensing for your organization</li>
+                        <li>Custom implementation consulting</li>
+                    </ul>
+                    <button class="framework-btn" onclick="scrollToSection('contact')">Inquire</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section class="demo-section">
+        <div class="container">
+            <h2>Experience CH(Ai)SE in Action</h2>
+            <div class="demo-container">
+                <div class="demo-controls">
+                    <button class="demo-button active" onclick="showDemo('mvp')" data-phase="mvp">MVP Development</button>
+                    <button class="demo-button" onclick="showDemo('demo')" data-phase="demo">Customer Demo</button>
+                    <button class="demo-button" onclick="showDemo('charter')" data-phase="charter">Organic Charter</button>
+                    <button class="demo-button" onclick="showDemo('enhance')" data-phase="enhance">Enhancement</button>
+                </div>
+                
+                <div class="demo-content" id="demo-content">
+                    <div class="demo-phase" id="mvp-phase">
+                        <h3>MVP Development Phase</h3>
+                        <p>Rapid development of core business functionality with minimal scope and maximum value delivery.</p>
+                        <div class="demo-metrics">
+                            <div class="demo-metric">
+                                <span class="metric-label">Timeline:</span>
+                                <span class="metric-value">1-2 weeks</span>
+                            </div>
+                            <div class="demo-metric">
+                                <span class="metric-label">Investment:</span>
+                                <span class="metric-value">$2,500-15,000</span>
+                            </div>
+                            <div class="demo-metric">
+                                <span class="metric-label">Success Criteria:</span>
+                                <span class="metric-value">Customer can operate business</span>
+                            </div>
+                        </div>
+                        <div class="demo-code">
+                            <code>phase_1_mvp(core_workflow, essential_features, production_ready)</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Development?</h2>
+                <p>Join the methodology revolution. Experience CH(Ai)SE and discover why scope evolution becomes your competitive advantage.</p>
+                
+                <div class="cta-options">
+                    <div class="cta-option">
+                        <h3>Start with CH(Ai)SE Implementation</h3>
+                        <p>Get a rapid MVP with organic charter development</p>
+                        <button class="cta-btn primary" onclick="showContactForm('implementation')">Get Started</button>
+                    </div>
+                    
+                    <div class="cta-option">
+                        <h3>Learn the Framework</h3>
+                        <p>Training and licensing for your development team</p>
+                        <button class="cta-btn secondary" onclick="showContactForm('training')">Inquire</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section" id="contact-form" style="display: none;">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Let's Discuss Your CH(Ai)SE Implementation</h2>
+                <form class="contact-form" id="chase-contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Interest</label>
+                            <select id="interest" name="interest">
+                                <option value="implementation">CH(Ai)SE Implementation</option>
+                                <option value="training">Framework Training</option>
+                                <option value="licensing">Methodology Licensing</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project challenges and how CH(Ai)SE might help..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form-submit-btn">Send Message</button>
+                    <div class="form-message" id="form-message" style="display: none;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
