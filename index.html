@@ -84,6 +84,16 @@
                 </a>
             </div>
         </div>
+        
+        <!-- Animated Background Elements -->
+        <div class="hero-bg">
+            <div class="bg-grid"></div>
+            <div class="floating-elements">
+                <div class="float-element">M</div>
+                <div class="float-element">B</div>
+                <div class="float-element">P</div>
+            </div>
+        </div>
     </section>
 
     <!-- CH(Ai)SE Methodology Section -->
@@ -383,7 +393,7 @@
                 <div class="results-hero">
                     <div class="result-stats">
                         <div class="result-stat primary">
-                            <div class="stat-number">920%</div>
+                            <div class="stat-number">Exceptional</div>
                             <div class="stat-label">ROI Achieved</div>
                         </div>
                         <div class="result-stat">
@@ -467,35 +477,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- ROI Breakdown -->
-            <div class="roi-breakdown">
-                <h3>ROI Transparency</h3>
-                <div class="roi-grid">
-                    <div class="roi-benefits">
-                        <h4>Annual Benefits: $23,000</h4>
-                        <ul>
-                            <li>70% reduction in administrative overhead</li>
-                            <li>24/7 customer accessibility</li>
-                            <li>100% compliance with response commitments</li>
-                            <li>Professional credibility competitive with larger operations</li>
-                        </ul>
-                    </div>
-                    <div class="roi-investment">
-                        <h4>Total Investment: $3,100</h4>
-                        <ul>
-                            <li>$2,500 initial MVP development</li>
-                            <li>$600 annual operational costs</li>
-                            <li>Unlimited growth potential</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="roi-formula">
-                    <div class="formula-text">
-                        ($23,000 - $3,100) ÷ $3,100 = <span class="result-highlight">642% Base ROI</span> + 278% Scope Evolution Value = <span class="final-result">920% Total ROI</span>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -524,7 +505,7 @@
                             <li><i class="fas fa-check"></i>Hair By Rhiannon Case Study</li>
                             <li><i class="fas fa-check"></i>Anti-Bloat Guarantee Guide</li>
                         </ul>
-                        <button class="framework-btn" onclick="downloadFramework('free')">
+                        <button class="framework-btn" onclick="showContactModal()">
                             <span>Download Free Guide</span>
                             <i class="fas fa-download"></i>
                         </button>
@@ -545,7 +526,7 @@
                             <li><i class="fas fa-check"></i>Team training and certification</li>
                             <li><i class="fas fa-check"></i>Ongoing methodology support</li>
                         </ul>
-                        <button class="framework-btn primary" onclick="scrollToSection('contact')">
+                        <button class="framework-btn primary" onclick="showContactModal()">
                             <span>Start Your Project</span>
                             <i class="fas fa-rocket"></i>
                         </button>
@@ -564,7 +545,7 @@
                             <li><i class="fas fa-check"></i>Framework licensing</li>
                             <li><i class="fas fa-check"></i>Custom implementation consulting</li>
                         </ul>
-                        <button class="framework-btn" onclick="scrollToSection('contact')">
+                        <button class="framework-btn" onclick="showContactModal()">
                             <span>Enterprise Inquiry</span>
                             <i class="fas fa-building"></i>
                         </button>
@@ -594,7 +575,7 @@
                         </div>
                         <h3>Start with Implementation</h3>
                         <p>Get a rapid MVP with organic charter development using the CH(Ai)SE™ methodology</p>
-                        <button class="contact-btn primary" onclick="showContactForm('implementation')">
+                        <button class="contact-btn primary" onclick="showContactModal()">
                             <span>Get Started</span>
                             <i class="fas fa-arrow-right"></i>
                         </button>
@@ -606,7 +587,7 @@
                         </div>
                         <h3>Learn the Framework</h3>
                         <p>Training and licensing for your development team to implement CH(Ai)SE™ internally</p>
-                        <button class="contact-btn secondary" onclick="showContactForm('training')">
+                        <button class="contact-btn secondary" onclick="showContactModal()">
                             <span>Learn More</span>
                             <i class="fas fa-book"></i>
                         </button>
@@ -616,7 +597,7 @@
         </div>
     </section>
 
-    <!-- Contact Form Modal -->
+    <!-- Contact Modal -->
     <div class="contact-modal" id="contact-modal">
         <div class="modal-overlay" onclick="closeContactModal()"></div>
         <div class="modal-content">
@@ -627,7 +608,7 @@
                 </button>
             </div>
             
-            <form class="contact-form" id="chase-contact-form">
+            <form class="contact-form" id="contact-form">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name">Name *</label>
@@ -696,7 +677,7 @@
                         <h4>Resources</h4>
                         <ul>
                             <li><a href="#framework" onclick="return scrollToSection('framework');">Download Framework</a></li>
-                            <li><a href="#" onclick="downloadFramework('free');">Free Guide</a></li>
+                            <li><a href="#" onclick="showContactModal();">Free Guide</a></li>
                             <li><a href="#contact" onclick="return scrollToSection('contact');">Training</a></li>
                         </ul>
                     </div>
@@ -706,7 +687,7 @@
                         <ul>
                             <li><a href="#contact" onclick="return scrollToSection('contact');">Contact</a></li>
                             <li><a href="#case-study" onclick="return scrollToSection('case-study');">Case Studies</a></li>
-                            <li><a href="#" onclick="showContactForm('consultation');">Consultation</a></li>
+                            <li><a href="#" onclick="showContactModal();">Consultation</a></li>
                         </ul>
                     </div>
                 </div>
