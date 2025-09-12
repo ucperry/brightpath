@@ -38,14 +38,21 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">Methodology Creators</div>
             <h1 class="hero-title">CH(Ai)SE Framework</h1>
             <h2 class="hero-subtitle">Collaborative Human + AI Solutions Environment</h2>
             <p class="hero-description">
                 The revolutionary methodology that makes scope evolution a competitive advantage, not a project risk. 
                 Proven 920% ROI through organic project evolution and evidence-first development.
             </p>
-            <div class="hero-stats">
+            
+            <!-- Stats Reveal Arrow -->
+            <button class="stats-reveal-btn" onclick="toggleStats()" aria-label="Show statistics">
+                <span class="arrow-icon">↓</span>
+                <span class="reveal-text">See the Proof</span>
+            </button>
+            
+            <!-- Hidden Stats (revealed on click) -->
+            <div class="hero-stats" id="hero-stats" style="display: none;">
                 <div class="stat">
                     <div class="stat-number">920%</div>
                     <div class="stat-label">Proven ROI</div>
@@ -58,10 +65,15 @@
                     <div class="stat-number">90%</div>
                     <div class="stat-label">Less Feature Bloat</div>
                 </div>
+                <div class="stat">
+                    <div class="stat-number">8 Days</div>
+                    <div class="stat-label">MVP to Production</div>
+                </div>
             </div>
+            
             <div class="cta-container">
                 <a href="#methodology" class="cta-button cta-primary" onclick="return scrollToSection('methodology');">Explore CH(Ai)SE</a>
-                <a href="#case-study" class="cta-button cta-secondary" onclick="return scrollToSection('case-study');">See Proof</a>
+                <a href="#case-study" class="cta-button cta-secondary" onclick="return scrollToSection('case-study');">View Case Study</a>
             </div>
         </div>
     </section>

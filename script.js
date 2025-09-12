@@ -150,6 +150,49 @@ const demoPhases = {
 };
 
 // ========================================
+// HERO STATS REVEAL FUNCTIONS
+// ========================================
+
+// Toggle stats visibility
+function toggleStats() {
+    try {
+        const statsElement = document.getElementById('hero-stats');
+        const toggleButton = document.querySelector('.stats-reveal-btn');
+        const arrowIcon = document.querySelector('.arrow-icon');
+        const revealText = document.querySelector('.reveal-text');
+        
+        if (statsElement && toggleButton) {
+            const isHidden = statsElement.style.display === 'none';
+            
+            if (isHidden) {
+                // Show stats
+                statsElement.style.display = 'grid';
+                statsElement.classList.add('show');
+                toggleButton.classList.add('active');
+                revealText.textContent = 'Hide Stats';
+                
+                // Add entrance animation
+                setTimeout(() => {
+                    statsElement.style.animation = 'slideInUp 0.6s ease-out';
+                }, 50);
+                
+                // Track interaction
+                trackMethodologyEngagement('hero_stats_revealed', 'user_action');
+                
+            } else {
+                // Hide stats
+                statsElement.style.display = 'none';
+                statsElement.classList.remove('show');
+                toggleButton.classList.remove('active');
+                revealText.textContent = 'See the Proof';
+            }
+        }
+    } catch (error) {
+        console.error('Error in toggleStats:', error);
+    }
+}
+
+// ========================================
 // NAVIGATION & SCROLL FUNCTIONS
 // ========================================
 

@@ -199,6 +199,34 @@ nav.scrolled {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: fadeInUp 1s ease-out;
+    /* Fix for mobile text clipping */
+    line-height: 1.1;
+    padding: 0.1em 0;
+}
+
+/* Mobile hero title fix */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        /* Ensure text isn't clipped on mobile */
+        -webkit-text-fill-color: var(--primary-gold);
+        background: none;
+        color: var(--primary-gold);
+        padding: 0.2em 0;
+        margin-bottom: 1rem;
+    }
+    
+    /* Alternative gradient approach for mobile if preferred */
+    .hero-title.gradient-mobile {
+        background: linear-gradient(135deg, #FFE066, #4A90E2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        /* Force hardware acceleration */
+        transform: translateZ(0);
+        will-change: transform;
+    }
 }
 
 .hero-subtitle {
@@ -1239,6 +1267,17 @@ nav.scrolled {
     from {
         opacity: 0;
         transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
     }
     to {
         opacity: 1;
