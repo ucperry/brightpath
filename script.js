@@ -251,48 +251,33 @@ window.addEventListener('scroll', function() {
 // MOBILE NAVIGATION
 // ========================================
 
-// Initialize mobile navigation
-function initializeMobileNavigation() {
-    const toggle = document.getElementById('mobile-menu-toggle');
-    const navLinks = document.getElementById('nav-links');
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navMenu = document.getElementById('nav-menu');
     
-    if (toggle && navLinks) {
-        toggle.addEventListener('click', function() {
-            navLinks.classList.toggle('open');
-            toggle.classList.toggle('active');
-            
-            // Animate hamburger lines
-            const lines = toggle.querySelectorAll('.hamburger-line');
-            lines.forEach((line, index) => {
-                if (toggle.classList.contains('active')) {
-                    switch(index) {
-                        case 0:
-                            line.style.transform = 'rotate(45deg) translate(5px, 5px)';
-                            break;
-                        case 1:
-                            line.style.opacity = '0';
-                            break;
-                        case 2:
-                            line.style.transform = 'rotate(-45deg) translate(7px, -6px)';
-                            break;
-                    }
-                } else {
-                    line.style.transform = '';
-                    line.style.opacity = '';
-                }
-            });
-            
-            trackInteraction('mobile_menu_toggle', navLinks.classList.contains('open') ? 'open' : 'close');
+    if (mobileToggle && navMenu) {
+        console.log('Mobile nav elements found - setting up...');
+        
+        mobileToggle.addEventListener('click', function() {
+            console.log('Mobile button clicked!');
+            mobileToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            console.log('Menu state:', navMenu.classList.contains('active') ? 'OPEN' : 'CLOSED');
         });
         
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            if (!toggle.contains(event.target) && !navLinks.contains(event.target)) {
-                closeMobileMenu();
-            }
+        // Close menu when clicking links
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                console.log('Menu closed via nav link');
+            });
         });
+    } else {
+        console.error('Mobile nav elements not found!');
     }
-}
+});
 
 // Close mobile menu
 function closeMobileMenu() {
