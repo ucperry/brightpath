@@ -1834,6 +1834,7 @@ nav.scrolled {
         gap: var(--spacing-lg);
         transition: right 0.3s ease;
         box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
     }
     
     .nav-links.open {
@@ -1851,6 +1852,11 @@ nav.scrolled {
         font-size: 1.1rem;
         border-bottom: 1px solid rgba(255, 224, 102, 0.2);
         width: 100%;
+    }
+    
+    .nav-links a:hover {
+        background: var(--gradient-card);
+        border-radius: var(--radius-sm);
     }
     
     /* Typography adjustments */

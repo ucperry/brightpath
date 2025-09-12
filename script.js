@@ -303,12 +303,7 @@ function closeMobileMenu() {
         navLinks.classList.remove('open');
         toggle.classList.remove('active');
         
-        // Reset hamburger lines
-        const lines = toggle.querySelectorAll('.hamburger-line');
-        lines.forEach(line => {
-            line.style.transform = '';
-            line.style.opacity = '';
-        });
+        console.log('Mobile menu closed'); // Debug log
     }
 }
 
