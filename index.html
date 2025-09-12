@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CH(Ai)SE Methodology | BrightPath Dev - Where Scope Evolution Becomes Competitive Advantage</title>
-    <meta name="description" content="Creators of CH(Ai)SE - the Collaborative Human + AI Solutions Environment. The only methodology that makes scope evolution a competitive advantage, not a project risk.">
+    <title>BrightPath CH(Ai)SE™ | Where MBP > MVP | Original Collaborative Human + AI Solutions</title>
+    <meta name="description" content="Creators of CH(Ai)SE™ - The Original Collaborative Human + AI Solutions Environment. Discover why MBP (Methodology-Blueprint-Playbook) matters more than MVP.">
     
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,111 +16,156 @@
         <div class="nav-content">
             <div class="logo" onclick="scrollToTop()">
                 <span class="logo-text">BrightPath</span>
-                <span class="logo-chase">CH(Ai)SE</span>
+                <span class="logo-chase">CH(Ai)SE™</span>
             </div>
             
             <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
             </button>
             
             <ul class="nav-links" id="nav-links">
-                <li><a href="#methodology" onclick="return scrollToSection('methodology'); closeMobileMenu();">The CH(Ai)SE Method</a></li>
-                <li><a href="#three-pillars" onclick="return scrollToSection('three-pillars'); closeMobileMenu();">Three Pillars</a></li>
-                <li><a href="#case-study" onclick="return scrollToSection('case-study'); closeMobileMenu();">Proven Results</a></li>
-                <li><a href="#framework" onclick="return scrollToSection('framework'); closeMobileMenu();">Framework Access</a></li>
-                <li><a href="#contact" onclick="return scrollToSection('contact'); closeMobileMenu();">Get Started</a></li>
+                <li><a href="#methodology" onclick="return scrollToSection('methodology'); closeMobileMenu();">CH(Ai)SE</a></li>
+                <li><a href="#mbp-framework" onclick="return scrollToSection('mbp-framework'); closeMobileMenu();" class="mbp-link">MBP > MVP</a></li>
+                <li><a href="#case-study" onclick="return scrollToSection('case-study'); closeMobileMenu();">Results</a></li>
+                <li><a href="#framework" onclick="return scrollToSection('framework'); closeMobileMenu();">Framework</a></li>
+                <li><a href="#contact" onclick="return scrollToSection('contact'); closeMobileMenu();">Start</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-content">
-            <h1 class="hero-title">CH(Ai)SE Framework</h1>
-            <h2 class="hero-subtitle">Collaborative Human + AI Solutions Environment</h2>
+            <div class="hero-badge">
+                <i class="fas fa-crown"></i>
+                <span>Creators of the Original CH(Ai)SE™ Framework</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="company-name">BrightPath</span>
+                <span class="method-name">CH(Ai)SE™</span>
+            </h1>
+            
+            <h2 class="hero-subtitle">Where MBP > MVP</h2>
+            
             <p class="hero-description">
-                The revolutionary methodology that makes scope evolution a competitive advantage, not a project risk. 
-                Proven 920% ROI through organic project evolution and evidence-first development.
+                The <strong>Original Collaborative Human + AI Solutions Environment</strong>. 
+                While others focus on MVPs, we've proven that 
+                <span class="highlight-text">Methodology–Blueprint–Playbook</span> 
+                is what keeps you winning long after launch.
             </p>
-            
-            <!-- Stats Reveal Arrow -->
-            <button class="stats-reveal-btn" onclick="toggleStats()" aria-label="Show statistics">
-                <span class="arrow-icon">↓</span>
-                <span class="reveal-text">See the Proof</span>
-            </button>
-            
-            <!-- Hidden Stats (revealed on click) -->
-            <div class="hero-stats" id="hero-stats" style="display: none;">
-                <div class="stat">
-                    <div class="stat-number">920%</div>
-                    <div class="stat-label">Proven ROI</div>
+
+            <!-- Value Props -->
+            <div class="value-props">
+                <div class="value-prop">
+                    <i class="fas fa-shield-check"></i>
+                    <span>Anti-Bloat Guarantee</span>
                 </div>
-                <div class="stat">
-                    <div class="stat-number">75%</div>
-                    <div class="stat-label">Faster Development</div>
+                <div class="value-prop">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Scope Evolution = Competitive Edge</span>
                 </div>
-                <div class="stat">
-                    <div class="stat-number">90%</div>
-                    <div class="stat-label">Less Feature Bloat</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">8 Days</div>
-                    <div class="stat-label">MVP to Production</div>
+                <div class="value-prop">
+                    <i class="fas fa-handshake"></i>
+                    <span>Human-AI Synergy</span>
                 </div>
             </div>
             
             <div class="cta-container">
-                <a href="#methodology" class="cta-button cta-primary" onclick="return scrollToSection('methodology');">Explore CH(Ai)SE</a>
-                <a href="#case-study" class="cta-button cta-secondary" onclick="return scrollToSection('case-study');">View Case Study</a>
+                <a href="#mbp-framework" class="cta-button cta-primary" onclick="return scrollToSection('mbp-framework');">
+                    <span>Discover MBP > MVP</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#case-study" class="cta-button cta-secondary" onclick="return scrollToSection('case-study');">
+                    <span>See Real Results</span>
+                    <i class="fas fa-chart-bar"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Animated Background Elements -->
+        <div class="hero-bg">
+            <div class="bg-grid"></div>
+            <div class="floating-elements">
+                <div class="float-element">M</div>
+                <div class="float-element">B</div>
+                <div class="float-element">P</div>
             </div>
         </div>
     </section>
 
-    <!-- CH(Ai)SE Overview -->
+    <!-- CH(Ai)SE Methodology Section -->
     <section class="methodology-section" id="methodology">
         <div class="container">
             <div class="section-header">
-                <h2>The CH(Ai)SE Methodology</h2>
-                <p class="section-subtitle">Collaborative Human + AI Solutions Environment</p>
+                <div class="section-badge">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>The Original Framework</span>
+                </div>
+                <h2>Why CH(Ai)SE™ Works</h2>
+                <p class="section-subtitle">The proven methodology that transforms scope evolution into competitive advantage</p>
             </div>
 
-            <div class="methodology-intro">
-                <div class="intro-text">
-                    <h3>The Problem We Solved</h3>
-                    <p>Traditional software development fails because requirements emerge from usage, not planning. Small businesses can't articulate technical needs without seeing functional systems. Scope changes become budget disasters instead of value opportunities.</p>
-                    
-                    <h3>The CH(Ai)SE Solution</h3>
-                    <p>We created the only framework that treats scope evolution as a competitive advantage. Through rapid MVP development and organic charter evolution, customers invest incrementally based on proven value, not speculative planning.</p>
-                </div>
-                <div class="methodology-visual">
-                    <div class="visual-card">
-                        <h4>Traditional Approach</h4>
-                        <div class="flow traditional-flow">
-                            <div class="flow-step negative">Lengthy Planning</div>
-                            <div class="flow-step negative">Fixed Scope</div>
-                            <div class="flow-step negative">Scope Creep = Budget Risk</div>
-                            <div class="flow-step negative">Deliver Planned Features</div>
+            <!-- Problem/Solution Grid -->
+            <div class="problem-solution-grid">
+                <div class="problem-card">
+                    <div class="card-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>The Problem We Solve</h3>
+                    </div>
+                    <div class="problem-list">
+                        <div class="problem-item">
+                            <span class="problem-icon">✗</span>
+                            <span>Bloated enterprise tools with unclear ROI</span>
+                        </div>
+                        <div class="problem-item">
+                            <span class="problem-icon">✗</span>
+                            <span>Scope changes become budget disasters</span>
+                        </div>
+                        <div class="problem-item">
+                            <span class="problem-icon">✗</span>
+                            <span>Requirements emerge from speculation, not usage</span>
+                        </div>
+                        <div class="problem-item">
+                            <span class="problem-icon">✗</span>
+                            <span>Projects deliver planned features, not needed solutions</span>
                         </div>
                     </div>
-                    <div class="visual-card featured">
-                        <h4>CH(Ai)SE Framework</h4>
-                        <div class="flow chase-flow">
-                            <div class="flow-step positive">Rapid MVP</div>
-                            <div class="flow-step positive">Customer Demo</div>
-                            <div class="flow-step positive">Organic Charter</div>
-                            <div class="flow-step positive">Evidence-Based Enhancement</div>
+                </div>
+
+                <div class="solution-card">
+                    <div class="card-header">
+                        <i class="fas fa-rocket"></i>
+                        <h3>The CH(Ai)SE™ Solution</h3>
+                    </div>
+                    <div class="solution-list">
+                        <div class="solution-item">
+                            <span class="solution-icon">✓</span>
+                            <span>Evidence-first progress with working software</span>
+                        </div>
+                        <div class="solution-item">
+                            <span class="solution-icon">✓</span>
+                            <span>Scope evolution becomes competitive advantage</span>
+                        </div>
+                        <div class="solution-item">
+                            <span class="solution-icon">✓</span>
+                            <span>Requirements emerge from real customer usage</span>
+                        </div>
+                        <div class="solution-item">
+                            <span class="solution-icon">✓</span>
+                            <span>Deliver needed solutions through organic evolution</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Core Principles -->
-            <div class="principles-grid">
-                <h3>Five Core CH(Ai)SE Principles</h3>
-                <div class="principle-cards">
+            <div class="principles-section">
+                <h3>Five Core CH(Ai)SE™ Principles</h3>
+                <div class="principles-grid">
                     <div class="principle-card" onclick="showPrinciple(1)">
                         <div class="principle-number">1</div>
                         <h4>Customer-Driven Clarity</h4>
@@ -146,104 +192,186 @@
                         <p>Requirements emerge from system usage, not upfront speculation</p>
                     </div>
                 </div>
+                
                 <div class="principle-details" id="principle-details">
-                    <h4>Select a principle above to see detailed explanation</h4>
-                    <p>Each CH(Ai)SE principle addresses specific failures in traditional project management approaches.</p>
+                    <div class="details-placeholder">
+                        <h4>Select a principle above to explore</h4>
+                        <p>Each CH(Ai)SE™ principle addresses specific failures in traditional project management approaches.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Three Pillars Framework -->
-    <section class="three-pillars-section" id="three-pillars">
+    <!-- MBP > MVP Section -->
+    <section class="mbp-section" id="mbp-framework">
         <div class="container">
             <div class="section-header">
-                <h2>The Three-Pillar Framework</h2>
-                <p class="section-subtitle">CM → STAR → IP: From Philosophy to Implementation</p>
+                <div class="section-badge mbp-badge">
+                    <i class="fas fa-crown"></i>
+                    <span>The Real MVP</span>
+                </div>
+                <h2>Why MBP > MVP</h2>
+                <p class="section-subtitle methodology-subtitle">Methodology–Blueprint–Playbook: The framework that keeps you winning</p>
             </div>
 
-            <div class="pillars-grid">
-                <div class="pillar-card" onclick="showPillar('cm')">
-                    <div class="pillar-icon">🎯</div>
-                    <h3>CH(Ai)SE Methodology (CM)</h3>
-                    <p><strong>The Philosophy & Governance</strong></p>
-                    <p>Establishes the "why" - core principles, team structure, and revolutionary approach to scope evolution as competitive advantage.</p>
-                    <div class="pillar-features">
-                        <ul>
-                            <li>Five foundational principles</li>
-                            <li>Human-AI collaboration protocols</li>
-                            <li>Organic project evolution model</li>
-                            <li>Ethical AI integration framework</li>
-                        </ul>
+            <!-- MVP vs MBP Hero -->
+            <div class="mvp-mbp-hero">
+                <div class="comparison-cards">
+                    <div class="mvp-card">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>MVPs Matter</h3>
+                        <p>Minimum Viable Product gets you in the game</p>
+                        <div class="card-subtitle">Fast, functional, ready to test</div>
+                    </div>
+                    
+                    <div class="vs-divider">
+                        <span>vs</span>
+                    </div>
+                    
+                    <div class="mbp-card featured">
+                        <div class="card-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>MBPs Matter More</h3>
+                        <p><strong>Methodology–Blueprint–Playbook</strong> keeps you winning</p>
+                        <div class="card-subtitle">Scalable, traceable, sustainable</div>
                     </div>
                 </div>
+                
+                <div class="mbp-tagline">
+                    <h3>MVP gets you in the game,<br><span class="highlight">MBP keeps you winning.</span></h3>
+                </div>
+            </div>
 
-                <div class="pillar-card" onclick="showPillar('star')">
-                    <div class="pillar-icon">⚡</div>
-                    <h3>STAR Guide (Blueprint)</h3>
-                    <p><strong>System Technical Architecture & Reference</strong></p>
-                    <p>Defines the "how" - repeatable technical standards, architecture patterns, and implementation blueprints.</p>
-                    <div class="pillar-features">
-                        <ul>
+            <!-- Three Pillars -->
+            <div class="three-pillars">
+                <h3>The Three-Pillar MBP Framework</h3>
+                <div class="pillars-grid">
+                    <div class="pillar-card" onclick="showPillar('methodology')">
+                        <div class="pillar-icon methodology-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="pillar-label">M</div>
+                        <h4>Methodology</h4>
+                        <p class="pillar-subtitle">Governance Principles</p>
+                        <p>Defines how value is judged, risk is managed, and decisions are made</p>
+                        <ul class="pillar-features">
+                            <li>Five foundational principles</li>
+                            <li>Human-AI collaboration protocols</li>
+                            <li>Organic evolution governance</li>
+                        </ul>
+                    </div>
+
+                    <div class="pillar-card" onclick="showPillar('blueprint')">
+                        <div class="pillar-icon blueprint-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <div class="pillar-label">B</div>
+                        <h4>Blueprint</h4>
+                        <p class="pillar-subtitle">Architecture & Standards</p>
+                        <p>Translates principles into technical architecture and patterns</p>
+                        <ul class="pillar-features">
                             <li>Frontend & database blueprints</li>
                             <li>Security & authentication standards</li>
-                            <li>Monitoring & maintenance protocols</li>
                             <li>Scalable architecture patterns</li>
                         </ul>
                     </div>
-                </div>
 
-                <div class="pillar-card" onclick="showPillar('ip')">
-                    <div class="pillar-icon">📋</div>
-                    <h3>Implementation Playbook (IP)</h3>
-                    <p><strong>The Execution Record</strong></p>
-                    <p>Documents the "what actually happened" - Plan vs. Actual vs. Why with complete evidence and traceability.</p>
-                    <div class="pillar-features">
-                        <ul>
+                    <div class="pillar-card" onclick="showPillar('playbook')">
+                        <div class="pillar-icon playbook-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <div class="pillar-label">P</div>
+                        <h4>Playbook</h4>
+                        <p class="pillar-subtitle">Execution & Traceability</p>
+                        <p>Documents plan-vs-actual with complete evidence chain</p>
+                        <ul class="pillar-features">
                             <li>Plan vs. Actual documentation</li>
                             <li>Evidence-based progress tracking</li>
-                            <li>Change log with rationale</li>
-                            <li>Lessons learned integration</li>
+                            <li>Bi-directional lineage</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
+            <!-- Bi-Directional Lineage -->
+            <div class="lineage-section">
+                <h3>Bi-Directional Lineage</h3>
+                <div class="lineage-flow">
+                    <div class="flow-direction top-down">
+                        <div class="flow-label">
+                            <i class="fas fa-arrow-down"></i>
+                            <span>Top-down</span>
+                        </div>
+                        <div class="flow-content">
+                            <p><strong>Principles → Architecture → Work Items</strong></p>
+                            <span>Requirements enforced at every step</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-divider">
+                        <div class="lineage-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-direction bottom-up">
+                        <div class="flow-label">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>Bottom-up</span>
+                        </div>
+                        <div class="flow-content">
+                            <p><strong>Any task → Blueprint decision → Governing Principle</strong></p>
+                            <span>Every work item links back to its rationale</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lineage-quote">
+                    <blockquote>
+                        "After MVP, we adapt quickly because every change is traceable to its rationale—no guesswork, no rework."
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- Pillar Details -->
             <div class="pillar-details" id="pillar-details">
-                <h3>The Power of Integration</h3>
-                <p>When CM principles guide STAR blueprints and IP captures real execution, projects deliver actual business value instead of planned features. This three-pillar approach ensures methodology consistency while enabling organic evolution.</p>
+                <div class="details-placeholder">
+                    <h4>Select a pillar above to explore</h4>
+                    <p>Each pillar creates the foundation for sustainable, scalable project evolution.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Economics Comparison -->
-    <section class="economics-section">
+    <!-- Anti-Bloat Guarantee Section -->
+    <section class="anti-bloat-section">
         <div class="container">
-            <h2>Project Economics Revolution</h2>
-            <div class="economics-comparison">
-                <div class="economics-card traditional">
-                    <h3>Traditional Economics</h3>
-                    <div class="economics-formula">
-                        <span class="formula">High Fixed Cost + Scope Risk = Customer Paralysis</span>
-                    </div>
-                    <ul class="economics-problems">
-                        <li>Large upfront investment before value proof</li>
-                        <li>Scope changes create budget disasters</li>
-                        <li>Customer commitment based on speculation</li>
-                        <li>Deliver planned features, not needed solutions</li>
-                    </ul>
+            <div class="guarantee-content">
+                <div class="guarantee-icon">
+                    <i class="fas fa-shield-check"></i>
                 </div>
-                <div class="economics-card chase">
-                    <h3>CH(Ai)SE Economics</h3>
-                    <div class="economics-formula">
-                        <span class="formula">Low Initial Cost + Incremental Investment = Customer Confidence</span>
+                <h2>The Anti-Bloat Guarantee</h2>
+                <p class="guarantee-text">
+                    Every feature must solve a defined business problem or it doesn't get built. 
+                    <strong>No exceptions, no compromises.</strong> This is our fundamental differentiator.
+                </p>
+                <div class="guarantee-stats">
+                    <div class="stat">
+                        <div class="stat-number">90%</div>
+                        <div class="stat-label">Less Feature Bloat</div>
                     </div>
-                    <ul class="economics-benefits">
-                        <li>Small MVP investment with immediate value</li>
-                        <li>Enhancement decisions based on proven ROI</li>
-                        <li>Customer investment increases as value proves</li>
-                        <li>Deliver needed solutions, not planned features</li>
-                    </ul>
+                    <div class="stat">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Unnecessary Features</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Business Value</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -253,283 +381,362 @@
     <section class="case-study-section" id="case-study">
         <div class="container">
             <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Real Results</span>
+                </div>
                 <h2>Proven Results: Hair By Rhiannon</h2>
-                <p class="section-subtitle">Real Implementation, Real ROI, Real Transformation</p>
+                <p class="section-subtitle">Real implementation, measurable ROI, transformed business</p>
             </div>
 
-            <div class="case-study-content">
-                <div class="case-study-overview">
-                    <div class="case-study-stats">
-                        <div class="case-stat">
+            <!-- Results Overview -->
+            <div class="results-overview">
+                <div class="results-hero">
+                    <div class="result-stats">
+                        <div class="result-stat primary">
                             <div class="stat-number">920%</div>
                             <div class="stat-label">ROI Achieved</div>
                         </div>
-                        <div class="case-stat">
-                            <div class="stat-number">8 Days</div>
-                            <div class="stat-label">MVP to Production</div>
+                        <div class="result-stat">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Days to MVP</div>
                         </div>
-                        <div class="case-stat">
+                        <div class="result-stat">
                             <div class="stat-number">300%</div>
                             <div class="stat-label">Scope Evolution</div>
                         </div>
-                        <div class="case-stat">
-                            <div class="stat-number">$2,500</div>
+                        <div class="result-stat">
+                            <div class="stat-number">$2.5K</div>
                             <div class="stat-label">Initial Investment</div>
                         </div>
                     </div>
-                    
-                    <div class="case-study-story">
+                </div>
+
+                <div class="case-study-story">
+                    <div class="story-section">
                         <h3>The Challenge</h3>
                         <p>Solo salon practitioner with vague requirements and hesitant technology adoption. Traditional approach would have required 16-week planning phase with $15,000-30,000 upfront investment.</p>
-                        
-                        <h3>The CH(Ai)SE Solution</h3>
+                    </div>
+                    
+                    <div class="story-section">
+                        <h3>The CH(Ai)SE™ Solution</h3>
                         <p>Rapid MVP development proving core value, followed by organic charter development based on actual usage. Customer saw exactly what she needed after one week of operations.</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="implementation-timeline">
-                    <h3>CH(Ai)SE Implementation Timeline</h3>
-                    <div class="timeline">
-                        <div class="timeline-phase">
-                            <div class="phase-header">
-                                <div class="phase-number">1</div>
-                                <h4>MVP Development</h4>
-                                <span class="phase-duration">8 Days</span>
-                            </div>
-                            <div class="phase-content">
-                                <p><strong>Investment:</strong> $2,500</p>
-                                <p><strong>Deliverable:</strong> Complete booking workflow with admin management</p>
-                                <p><strong>Result:</strong> Functional business operations from day one</p>
-                            </div>
+            <!-- Implementation Timeline -->
+            <div class="timeline-section">
+                <h3>CH(Ai)SE™ Implementation Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item" onclick="highlightPhase(1)">
+                        <div class="timeline-marker">
+                            <div class="marker-number">1</div>
                         </div>
-                        
-                        <div class="timeline-phase">
-                            <div class="phase-header">
-                                <div class="phase-number">2</div>
-                                <h4>Customer Demonstration</h4>
-                                <span class="phase-duration">1 Week</span>
-                            </div>
-                            <div class="phase-content">
-                                <p><strong>Investment:</strong> $0 (customer uses system)</p>
-                                <p><strong>Activity:</strong> Real business operations with working system</p>
-                                <p><strong>Result:</strong> "I can see exactly what I need now"</p>
-                            </div>
+                        <div class="timeline-content">
+                            <h4>MVP Development</h4>
+                            <div class="timeline-duration">8 Days</div>
+                            <p><strong>$2,500 investment</strong> → Complete booking workflow with admin management</p>
+                            <div class="timeline-result">Functional business operations from day one</div>
                         </div>
-                        
-                        <div class="timeline-phase">
-                            <div class="phase-header">
-                                <div class="phase-number">3</div>
-                                <h4>Organic Charter</h4>
-                                <span class="phase-duration">1 Week</span>
-                            </div>
-                            <div class="phase-content">
-                                <p><strong>Investment:</strong> Planning time only</p>
-                                <p><strong>Emerged Requirements:</strong> 6-step email automation, visual calendar, "My Day" dashboard</p>
-                                <p><strong>Traditional Impact:</strong> 300% scope increase would cost $15K-30K</p>
-                                <p><strong>CH(Ai)SE Impact:</strong> Manageable $3K-5K enhancement phases</p>
-                            </div>
+                    </div>
+
+                    <div class="timeline-item" onclick="highlightPhase(2)">
+                        <div class="timeline-marker">
+                            <div class="marker-number">2</div>
                         </div>
-                        
-                        <div class="timeline-phase">
-                            <div class="phase-header">
-                                <div class="phase-number">4</div>
-                                <h4>Enhancement Implementation</h4>
-                                <span class="phase-duration">Ongoing</span>
-                            </div>
-                            <div class="phase-content">
-                                <p><strong>Investment:</strong> $3,000-5,000 per phase</p>
-                                <p><strong>Approach:</strong> Evidence-based feature development</p>
-                                <p><strong>Result:</strong> Each enhancement justified by proven business value</p>
-                            </div>
+                        <div class="timeline-content">
+                            <h4>Customer Demonstration</h4>
+                            <div class="timeline-duration">1 Week</div>
+                            <p><strong>$0 investment</strong> → Real business operations with working system</p>
+                            <div class="timeline-result">"I can see exactly what I need now"</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" onclick="highlightPhase(3)">
+                        <div class="timeline-marker">
+                            <div class="marker-number">3</div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Organic Charter</h4>
+                            <div class="timeline-duration">1 Week</div>
+                            <p><strong>Planning time only</strong> → Emerged requirements: 6-step email automation, visual calendar</p>
+                            <div class="timeline-result">Manageable $3K-5K enhancement phases vs $15K-30K traditional</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" onclick="highlightPhase(4)">
+                        <div class="timeline-marker">
+                            <div class="marker-number">4</div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Enhancement Implementation</h4>
+                            <div class="timeline-duration">Ongoing</div>
+                            <p><strong>$3K-5K per phase</strong> → Evidence-based feature development</p>
+                            <div class="timeline-result">Each enhancement justified by proven business value</div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="roi-breakdown">
-                    <h3>ROI Calculation Transparency</h3>
-                    <div class="roi-details">
-                        <div class="roi-benefits">
-                            <h4>Annual Benefits: $23,000</h4>
-                            <ul>
-                                <li>70% reduction in administrative overhead</li>
-                                <li>24/7 customer accessibility vs business-hours-only</li>
-                                <li>100% compliance with 24-hour response commitment</li>
-                                <li>Professional credibility competitive with larger operations</li>
-                            </ul>
-                        </div>
-                        <div class="roi-investment">
-                            <h4>Total Investment: $3,100</h4>
-                            <ul>
-                                <li>$2,500 initial MVP development</li>
-                                <li>$600 annual operational costs ($50/month)</li>
-                                <li>Unlimited growth potential with same infrastructure</li>
-                            </ul>
-                        </div>
+            <!-- ROI Breakdown -->
+            <div class="roi-breakdown">
+                <h3>ROI Transparency</h3>
+                <div class="roi-grid">
+                    <div class="roi-benefits">
+                        <h4>Annual Benefits: $23,000</h4>
+                        <ul>
+                            <li>70% reduction in administrative overhead</li>
+                            <li>24/7 customer accessibility</li>
+                            <li>100% compliance with response commitments</li>
+                            <li>Professional credibility competitive with larger operations</li>
+                        </ul>
                     </div>
-                    <div class="roi-formula">
-                        <span class="formula">($23,000 - $3,100) ÷ $3,100 = 642% Base ROI + 278% Additional Value = 920% Total ROI</span>
+                    <div class="roi-investment">
+                        <h4>Total Investment: $3,100</h4>
+                        <ul>
+                            <li>$2,500 initial MVP development</li>
+                            <li>$600 annual operational costs</li>
+                            <li>Unlimited growth potential</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roi-formula">
+                    <div class="formula-text">
+                        ($23,000 - $3,100) ÷ $3,100 = <span class="result-highlight">642% Base ROI</span> + 278% Scope Evolution Value = <span class="final-result">920% Total ROI</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Framework Access -->
+    <!-- Framework Access Section -->
     <section class="framework-section" id="framework">
         <div class="container">
             <div class="section-header">
-                <h2>Access the CH(Ai)SE Framework</h2>
+                <div class="section-badge">
+                    <i class="fas fa-download"></i>
+                    <span>Get Started</span>
+                </div>
+                <h2>Access the CH(Ai)SE™ Framework</h2>
                 <p class="section-subtitle">Get the methodology that's transforming software development</p>
             </div>
 
             <div class="framework-options">
                 <div class="framework-card">
-                    <h3>Free Framework Overview</h3>
-                    <div class="framework-price">Free</div>
-                    <ul>
-                        <li>CH(Ai)SE Core Principles</li>
-                        <li>Three-Pillar Framework Summary</li>
-                        <li>Hair By Rhiannon Case Study</li>
-                        <li>Project Economics Comparison</li>
-                    </ul>
-                    <button class="framework-btn" onclick="downloadFramework('free')">Download Now</button>
+                    <div class="card-header">
+                        <h3>Framework Overview</h3>
+                        <div class="price">Free</div>
+                    </div>
+                    <div class="card-content">
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i>CH(Ai)SE™ Core Principles</li>
+                            <li><i class="fas fa-check"></i>MBP Framework Summary</li>
+                            <li><i class="fas fa-check"></i>Hair By Rhiannon Case Study</li>
+                            <li><i class="fas fa-check"></i>Anti-Bloat Guarantee Guide</li>
+                        </ul>
+                        <button class="framework-btn" onclick="downloadFramework('free')">
+                            <span>Download Free Guide</span>
+                            <i class="fas fa-download"></i>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="framework-card featured">
-                    <h3>Complete CH(Ai)SE Implementation</h3>
-                    <div class="framework-price">Let's Talk</div>
-                    <ul>
-                        <li>Full methodology implementation</li>
-                        <li>Custom STAR Guide for your domain</li>
-                        <li>Implementation Playbook development</li>
-                        <li>Team training and certification</li>
-                        <li>Ongoing methodology support</li>
-                    </ul>
-                    <button class="framework-btn primary" onclick="scrollToSection('contact')">Get Started</button>
+                    <div class="card-ribbon">Most Popular</div>
+                    <div class="card-header">
+                        <h3>Complete Implementation</h3>
+                        <div class="price">Let's Talk</div>
+                    </div>
+                    <div class="card-content">
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i>Full methodology implementation</li>
+                            <li><i class="fas fa-check"></i>Custom STAR Guide for your domain</li>
+                            <li><i class="fas fa-check"></i>Implementation Playbook development</li>
+                            <li><i class="fas fa-check"></i>Team training and certification</li>
+                            <li><i class="fas fa-check"></i>Ongoing methodology support</li>
+                        </ul>
+                        <button class="framework-btn primary" onclick="scrollToSection('contact')">
+                            <span>Start Your Project</span>
+                            <i class="fas fa-rocket"></i>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="framework-card">
-                    <h3>CH(Ai)SE Training & Licensing</h3>
-                    <div class="framework-price">Enterprise</div>
-                    <ul>
-                        <li>Team methodology training</li>
-                        <li>CH(Ai)SE certification program</li>
-                        <li>Framework licensing for your organization</li>
-                        <li>Custom implementation consulting</li>
-                    </ul>
-                    <button class="framework-btn" onclick="scrollToSection('contact')">Inquire</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Interactive Demo Section -->
-    <section class="demo-section">
-        <div class="container">
-            <h2>Experience CH(Ai)SE in Action</h2>
-            <div class="demo-container">
-                <div class="demo-controls">
-                    <button class="demo-button active" onclick="showDemo('mvp')" data-phase="mvp">MVP Development</button>
-                    <button class="demo-button" onclick="showDemo('demo')" data-phase="demo">Customer Demo</button>
-                    <button class="demo-button" onclick="showDemo('charter')" data-phase="charter">Organic Charter</button>
-                    <button class="demo-button" onclick="showDemo('enhance')" data-phase="enhance">Enhancement</button>
-                </div>
-                
-                <div class="demo-content" id="demo-content">
-                    <div class="demo-phase" id="mvp-phase">
-                        <h3>MVP Development Phase</h3>
-                        <p>Rapid development of core business functionality with minimal scope and maximum value delivery.</p>
-                        <div class="demo-metrics">
-                            <div class="demo-metric">
-                                <span class="metric-label">Timeline:</span>
-                                <span class="metric-value">1-2 weeks</span>
-                            </div>
-                            <div class="demo-metric">
-                                <span class="metric-label">Investment:</span>
-                                <span class="metric-value">$2,500-15,000</span>
-                            </div>
-                            <div class="demo-metric">
-                                <span class="metric-label">Success Criteria:</span>
-                                <span class="metric-value">Customer can operate business</span>
-                            </div>
-                        </div>
-                        <div class="demo-code">
-                            <code>phase_1_mvp(core_workflow, essential_features, production_ready)</code>
-                        </div>
+                    <div class="card-header">
+                        <h3>Enterprise Training</h3>
+                        <div class="price">Enterprise</div>
+                    </div>
+                    <div class="card-content">
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i>Team methodology training</li>
+                            <li><i class="fas fa-check"></i>CH(Ai)SE™ certification program</li>
+                            <li><i class="fas fa-check"></i>Framework licensing</li>
+                            <li><i class="fas fa-check"></i>Custom implementation consulting</li>
+                        </ul>
+                        <button class="framework-btn" onclick="scrollToSection('contact')">
+                            <span>Enterprise Inquiry</span>
+                            <i class="fas fa-building"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA -->
-    <section class="final-cta" id="contact">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Transform Your Development?</h2>
-                <p>Join the methodology revolution. Experience CH(Ai)SE and discover why scope evolution becomes your competitive advantage.</p>
-                
-                <div class="cta-options">
-                    <div class="cta-option">
-                        <h3>Start with CH(Ai)SE Implementation</h3>
-                        <p>Get a rapid MVP with organic charter development</p>
-                        <button class="cta-btn primary" onclick="showContactForm('implementation')">Get Started</button>
-                    </div>
-                    
-                    <div class="cta-option">
-                        <h3>Learn the Framework</h3>
-                        <p>Training and licensing for your development team</p>
-                        <button class="cta-btn secondary" onclick="showContactForm('training')">Inquire</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section class="contact-section" id="contact-form" style="display: none;">
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
         <div class="container">
             <div class="contact-content">
-                <h2>Let's Discuss Your CH(Ai)SE Implementation</h2>
-                <form class="contact-form" id="chase-contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" required>
+                <div class="contact-header">
+                    <div class="section-badge">
+                        <i class="fas fa-handshake"></i>
+                        <span>Ready to Start</span>
+                    </div>
+                    <h2>Transform Your Development with CH(Ai)SE™</h2>
+                    <p class="contact-subtitle">Join the methodology revolution. Experience how scope evolution becomes your competitive advantage.</p>
+                </div>
+
+                <div class="contact-options">
+                    <div class="contact-option">
+                        <div class="option-icon">
+                            <i class="fas fa-rocket"></i>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
+                        <h3>Start with Implementation</h3>
+                        <p>Get a rapid MVP with organic charter development using the CH(Ai)SE™ methodology</p>
+                        <button class="contact-btn primary" onclick="showContactForm('implementation')">
+                            <span>Get Started</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
                     
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company">
+                    <div class="contact-option">
+                        <div class="option-icon">
+                            <i class="fas fa-graduation-cap"></i>
                         </div>
-                        <div class="form-group">
-                            <label for="interest">Interest</label>
-                            <select id="interest" name="interest">
-                                <option value="implementation">CH(Ai)SE Implementation</option>
-                                <option value="training">Framework Training</option>
-                                <option value="licensing">Methodology Licensing</option>
-                                <option value="consultation">Consultation</option>
-                            </select>
-                        </div>
+                        <h3>Learn the Framework</h3>
+                        <p>Training and licensing for your development team to implement CH(Ai)SE™ internally</p>
+                        <button class="contact-btn secondary" onclick="showContactForm('training')">
+                            <span>Learn More</span>
+                            <i class="fas fa-book"></i>
+                        </button>
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Project Details *</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project challenges and how CH(Ai)SE might help..." required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="form-submit-btn">Send Message</button>
-                    <div class="form-message" id="form-message" style="display: none;"></div>
-                </form>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Contact Form Modal -->
+    <div class="contact-modal" id="contact-modal">
+        <div class="modal-overlay" onclick="closeContactModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Let's Discuss Your CH(Ai)SE™ Implementation</h3>
+                <button class="modal-close" onclick="closeContactModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <form class="contact-form" id="chase-contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Interest</label>
+                        <select id="interest" name="interest">
+                            <option value="implementation">CH(Ai)SE™ Implementation</option>
+                            <option value="training">Framework Training</option>
+                            <option value="licensing">Methodology Licensing</option>
+                            <option value="consultation">General Consultation</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Project Details *</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your project challenges and how CH(Ai)SE™ might help..." required></textarea>
+                </div>
+                
+                <button type="submit" class="form-submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                
+                <div class="form-message" id="form-message" style="display: none;"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">BrightPath</span>
+                        <span class="logo-chase">CH(Ai)SE™</span>
+                    </div>
+                    <p class="footer-tagline">Creators of the Original Collaborative Human + AI Solutions Environment</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Framework</h4>
+                        <ul>
+                            <li><a href="#methodology" onclick="return scrollToSection('methodology');">CH(Ai)SE™ Method</a></li>
+                            <li><a href="#mbp-framework" onclick="return scrollToSection('mbp-framework');">MBP > MVP</a></li>
+                            <li><a href="#case-study" onclick="return scrollToSection('case-study');">Results</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#framework" onclick="return scrollToSection('framework');">Download Framework</a></li>
+                            <li><a href="#" onclick="downloadFramework('free');">Free Guide</a></li>
+                            <li><a href="#contact" onclick="return scrollToSection('contact');">Training</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#contact" onclick="return scrollToSection('contact');">Contact</a></li>
+                            <li><a href="#case-study" onclick="return scrollToSection('case-study');">Case Studies</a></li>
+                            <li><a href="#" onclick="showContactForm('consultation');">Consultation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 BrightPath CH(Ai)SE. All rights reserved. CH(Ai)SE™ is a trademark of BrightPath.</p>
+                </div>
+                <div class="footer-cta">
+                    <p>Ready to make scope evolution your competitive advantage?</p>
+                    <button class="footer-btn" onclick="scrollToSection('contact')">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
