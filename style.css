@@ -2434,6 +2434,39 @@
 
             /* Mobile responsive for services */
             @media (max-width: 768px) {
+                /* Add these mobile navigation rules */
+                .nav-links {
+                    display: none;
+                    position: fixed;
+                    top: 70px;
+                    left: 0;
+                    width: 100%;
+                    background: rgba(255, 255, 255, 0.98);
+                    backdrop-filter: blur(10px);
+                    flex-direction: column;
+                    padding: var(--spacing-lg);
+                    box-shadow: var(--shadow-lg);
+                    gap: var(--spacing-lg);
+                    align-items: flex-start;
+                    z-index: 999;
+                }
+                
+                .nav-links.active {
+                    display: flex;
+                }
+                
+                .mobile-menu-toggle {
+                    display: flex;
+                }
+                
+                .nav-content {
+                    align-items: center;
+                    padding: 0 var(--spacing-sm);
+                }
+                
+                .logo {
+                    padding-top: 0;
+                }
                 .service-options {
                     grid-template-columns: 1fr;
                     gap: var(--spacing-lg);
