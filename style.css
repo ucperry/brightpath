@@ -2656,6 +2656,32 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: var(--spacing-md);
             }
+
+            .contact-header-container {
+                padding: var(--spacing-lg);
+            }
+            
+            .contact-title {
+                font-size: 2.5rem;
+            }
+            
+            .contact-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .cta-options {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+            
+            .contact-form-section {
+                padding: var(--spacing-lg);
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
         }
 
         @media (max-width: 480px) {
@@ -2775,5 +2801,17 @@
 
             .validation-icon {
                 font-size: 1.8rem;
-            }   
+            }
+            
+            contact-title {
+                font-size: 2rem;
+            }
+            
+            .contact-subtitle {
+                font-size: 1rem;
+            }
+            
+            .contact-header-container {
+                padding: var(--spacing-md);
+            }
         }
