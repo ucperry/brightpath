@@ -1108,49 +1108,6 @@
             font-weight: 700;
         }
 
-        .execution-cycle {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: var(--radius-xl);
-            padding: var(--spacing-2xl);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            margin-bottom: var(--spacing-xl);
-        }
-
-        /* FIXED: Cycle diagram in its own container with blue-to-grey gradient */
-        .cycle-diagram-container {
-            background: linear-gradient(135deg, rgba(135, 206, 235, 0.2), rgba(169, 169, 169, 0.2));
-            border-radius: var(--radius-xl);
-            padding: var(--spacing-2xl);
-            text-align: center;
-            border: 2px solid rgba(135, 206, 235, 0.3);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            margin-bottom: var(--spacing-xl);
-        }
-
-        .cycle-diagram {
-            font-family: var(--font-mono);
-            font-size: 1.1rem;
-            color: var(--primary-gold);
-            line-height: 2;
-            animation: pulse 4s ease-in-out infinite;
-        }
-
-        .cycle-arrow {
-            color: var(--accent-blue);
-            font-size: 1.5rem;
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.02);
-            }
-        }
 
         .phases-grid {
             display: grid;
@@ -2464,6 +2421,42 @@
                 padding: 0 var(--spacing-sm);
             }
             
+            .hero-comparison {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+
+            .hero-cta {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+
+            .hero-company {
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+            }
+            
+            .hero-company-name {
+                font-size: 2.5rem;
+                margin-bottom: 0.25rem;
+            }
+            
+            .hero-company-chase {
+                font-size: 2rem;
+                white-space: normal; /* Override the nowrap */
+            }
+
+            .hero-tagline {
+                font-size: 1.1rem;
+                white-space: normal;
+            }
+
+            .nav-content {
+                padding: 0 var(--spacing-sm);
+                align-items: center;
+            }
+
             .logo {
                 padding-top: 0;
             }
@@ -2665,6 +2658,13 @@
         }
 
         @media (max-width: 480px) {
+             .hero-company-name {
+                font-size: 2rem;
+            }
+            
+            .hero-company-chase {
+                font-size: 1.5rem;
+            }
             .problem-title {
                 font-size: 2rem;
             }
